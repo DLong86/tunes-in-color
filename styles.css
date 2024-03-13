@@ -8,8 +8,8 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
-.main {
-	/* background: #000; */
+nav {
+	color: #fff;
 }
 
 .container {
@@ -18,7 +18,6 @@ body {
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
-	/* background-color: pink; */
 	text-transform: uppercase;
 	color: #fff;
 }
@@ -101,9 +100,43 @@ body {
 }
 
 @media screen and (max-width: 1250px) {
-	.container {
+	.main {
 		flex-direction: column;
 	}
-	.left {
+
+	.container {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.middle {
+		order: -1;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.box2 {
+		width: 80%;
+	}
+
+	.left,
+	.right {
+		width: 80%;
+		display: flex;
+		flex-direction: row;
+		text-align: center;
+		gap: 12px;
+	}
+
+	.box1 {
+		margin: 20px auto;
+		width: 100%;
 	}
 }
