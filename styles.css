@@ -7,12 +7,6 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
-/* nav {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-} */
-
 .menu {
 	display: flex;
 	align-items: center;
@@ -27,6 +21,7 @@ body {
 .menu p {
 	margin-left: 10px;
 }
+
 .menu p,
 .menu i {
 	cursor: pointer;
@@ -41,6 +36,8 @@ body {
 	height: 100vh;
 	text-transform: uppercase;
 	color: #fff;
+	/* componsate for the nav and re-center  */
+	margin-top: -50px;
 }
 
 .left,
@@ -121,7 +118,7 @@ body {
 	bottom: 0;
 	right: 0;
 	padding: 12px;
-	font-size: 27px;
+	font-size: 22px;
 	cursor: pointer;
 }
 
@@ -206,7 +203,6 @@ body {
 	.right {
 		width: 80%;
 		height: 50%;
-		display: flex;
 		flex-direction: row;
 		gap: 12px;
 	}
@@ -245,7 +241,6 @@ body {
 	.right {
 		width: 80%;
 		height: 50%;
-		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-between;
