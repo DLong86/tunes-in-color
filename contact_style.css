@@ -1,16 +1,140 @@
 body {
-	box-sizing: border-box;
-	margin: 0;
-	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
-	background-size: cover;
-	background-position: center;
-	font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  background-image: url("./images/photo-1555181937-efe4e074a301.avif");
+  background-size: cover;
+  background-position: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h3 {
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0 20px;
+  color: #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.menu p {
+  margin-left: 10px;
+}
+
+.menu p,
+.menu i {
+  cursor: pointer;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  width: 500px;
+  height: 80%;
+  background-color: #fff;
+  margin-top: -100px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.portrait_image,
+.contact_details {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+}
+.portrait_image {
+  background-color: rgb(230, 230, 230);
+  border-radius: 10px 10px 0 0;
+  background-image: url("./images/hand.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.contact_details {
+  background-color: #fff;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+  font-family: "EB Garamond", serif;
+}
+
+li {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+li:first-child {
+  margin-top: 0;
+}
+
+li i {
+  margin-right: 26px;
+  color: #028dac;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1240px) {
+  .menu {
+    padding: 0 20px 0 0;
+  }
+
+  .menu p {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav i {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .main {
+    width: 90%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  li {
+    font-size: 16px;
+    margin-top: 6px;
+  }
 }
