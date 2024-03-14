@@ -7,6 +7,14 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
+a,
+a:hover,
+a:focus,
+a:active {
+	text-decoration: none;
+	color: inherit;
+}
+
 .menu {
 	display: flex;
 	align-items: center;
