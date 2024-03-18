@@ -1,52 +1,88 @@
 body {
-  box-sizing: border-box;
-  margin: 0;
-  background-image: url("./images/photo-1555181937-efe4e074a301.avif");
-  background-size: cover;
-  background-position: center;
-  font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	background-image: url('./images/photo-1555181937-efe4e074a301.avif');
+	background-size: cover;
+	background-position: center;
+	font-family: 'Montserrat', sans-serif;
+	min-height: 100vh;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* complete nav bar styling */
 nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 nav h3 {
-  padding-left: 20px;
-  text-transform: uppercase;
+	padding-left: 20px;
+	text-transform: uppercase;
 }
 nav h3:hover {
-  color: rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
+	color: rgba(0, 0, 0, 0.7);
+	transition: 0.2s;
 }
 
 .menu {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 0 20px;
-  color: #000;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	padding: 0 20px;
+	color: #000;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 18px;
 }
 
 .menu p {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
 .menu p,
 .menu i {
-  cursor: pointer;
+	cursor: pointer;
 }
+
+.main {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.owl-carousel {
+	margin-top: 50px;
+	width: 80%;
+	margin-left: 50px;
+	margin-right: 50px;
+	/* height: 500px; */
+}
+
+.owl-item.active.center {
+	-webkit-transform: scale(1.8);
+	transform: scale(1.8);
+}
+
+.item {
+	padding: 20px;
+	margin: 50px;
+	/* height: auto; */
+}
+
+.owl-carousel .item img {
+	max-width: 400px; /* Set the maximum width of the images to 400px */
+	width: 100%; /* Ensure that the images fill their container */
+	height: auto; /* Allow the height to adjust proportionally */
+}
+
+
