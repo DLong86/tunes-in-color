@@ -2,10 +2,10 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-image: url('./images/photo-1555181937-efe4e074a301.avif');
+	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
 	background-size: cover;
 	background-position: center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	min-height: 100vh;
 }
 
@@ -55,34 +55,110 @@ nav h3:hover {
 
 .main {
 	height: 100vh;
+	/* background-color: #fff; */
+	width: 80%;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-.owl-carousel {
-	margin-top: 50px;
-	width: 80%;
-	margin-left: 50px;
-	margin-right: 50px;
-	/* height: 500px; */
+.tunes_text {
+	font-family: "EB Garamond", serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-weight: 200;
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: 80px;
 }
 
-.owl-item.active.center {
-	-webkit-transform: scale(1.8);
-	transform: scale(1.8);
+.tunes_text p {
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
-.item {
-	padding: 20px;
-	margin: 50px;
-	/* height: auto; */
+.tunes_text h3 {
+	font-weight: 200;
+	font-size: 27px;
 }
 
-.owl-carousel .item img {
-	max-width: 400px; /* Set the maximum width of the images to 400px */
-	width: 100%; /* Ensure that the images fill their container */
-	height: auto; /* Allow the height to adjust proportionally */
+.slider-container {
+	position: relative;
+	width: 490px; /* Change width to 100% for responsiveness */
+	height: 490px; /* Allow height to adjust based on aspect ratio */
+	overflow: hidden;
+	margin-bottom: 20px;
+	box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
+	border-radius: 8px;
 }
 
+.slider {
+	display: flex;
+	transition: transform 0.5s ease; /* Adjust the transition timing here */
+	width: calc(490px * 3); /* Total width of all images */
+	width: 490px;
+	height: 490px;
+}
 
+.slider img {
+	width: 100%; /* Set image width to 100% to maintain aspect ratio */
+	height: auto; /* Allow height to adjust based on aspect ratio */
+	transition: transform 0.5s ease;
+	border-radius: 8px;
+}
+
+.prev-btn,
+.next-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: inherit;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: #fff;
+	font-size: 25px;
+	opacity: 0.7;
+}
+
+.prev-btn {
+	left: 0;
+}
+
+.next-btn {
+	right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.main {
+		height: 100%;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.slider-container {
+		width: 100%; /* Change width to 100% for responsiveness */
+	}
+
+	.slider {
+		width: 100%;
+	}
+
+	.slider img {
+		width: 100%; /* Set image width to 100% to maintain aspect ratio */
+		height: auto; /* Allow height to adjust based on aspect ratio */
+		transition: transform 0.5s ease;
+		border-radius: 8px;
+	}
+}
+
+@media screen and (max-height: 700px) {
+	.slider-container {
+		.slider-container {
+			max-height: calc(100vh - 50px); /* Adjust maximum height */
+		}
+	}
+}

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Yohanan Cinnamon | Music</title>
 		<link rel="stylesheet" href="/music_7_style.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -26,12 +26,6 @@
 			integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
 			crossorigin="anonymous"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-			integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-			crossorigin="anonymous"
-		/>
 	</head>
 	<body>
 		<nav>
@@ -46,66 +40,24 @@
 				<h3>Tunes in Colour</h3>
 				<p>
 					Musical instruments, with all their different sounds and shapes, are
-					great metaphors for people.
-				</p>
-				<p>
+					great metaphors for people. <br />
+
 					the music herein is all about coming together of melody and colour,
 					and the desire to enchant.
 				</p>
 			</div>
-			<div class="owl-carousel owl-theme">
-				<div class="item">
-					<img src="/images/generic.jpg" alt="" />
+			<div class="slider-container">
+				<div class="slider">
+					<img src="/images/dog.jpg" alt="Image 1" />
+					<img src="/images/generic.jpg" alt="Image 2" />
+					<img src="/images/hand.jpg" alt="Image 3" />
+					<img src="/images/generic.jpg" alt="Image 2" />
+					<img src="/images/hand.jpg" alt="Image 3" />
 				</div>
-				<div class="item">
-					<img src="/images/hand.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="/images/dog.jpg" alt="" />
-				</div>
-				<div class="item">
-					<img src="/images/hand.jpg" alt="" />
-				</div>
+				<button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+				<button class="next-btn" onclick="nextSlide()">&#10095;</button>
 			</div>
 		</div>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
-			integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-			integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-			crossorigin="anonymous"
-		></script>
-
-		<script type="text/javascript">
-			$('.owl-carousel').owlCarousel({
-				loop: false,
-				autoplay: false,
-				margin: 40,
-				autoWidth: true,
-				center: true,
-				nav: true,
-				dots: true,
-				responsiveClass: true,
-				responsive: {
-					0: {
-						items: 1,
-						nav: true,
-					},
-					600: {
-						items: 3,
-						nav: true,
-						loop: true,
-					},
-					1000: {
-						items: 5,
-						nav: true,
-						loop: true,
-					},
-				},
-			});
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
