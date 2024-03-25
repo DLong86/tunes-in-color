@@ -69,7 +69,6 @@ nav h3:hover {
 	height: 100vh;
 	background-image: url("/images/dummy_cover.jpg");
 	background-size: cover;
-	/* background-position: center; */
 }
 
 /* Fade bottom of main image */
@@ -121,6 +120,36 @@ nav h3:hover {
 	z-index: 999;
 	border-radius: 8px;
 	transform: translateX(-10%); /* Center the small box */
+}
+
+/* Text inside main big box section */
+.social {
+	position: absolute;
+	bottom: 32%;
+	left: 5%;
+	/* background-color: #000; */
+	width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.big_box .fa-youtube,
+.big_box .fa-spotify {
+	color: #028dac;
+	font-size: 36px;
+}
+
+.album_text {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 0 8px 8px 0;
+	background-color: #028dac;
+	height: 100%;
+	width: 60%;
+}
+
+.title {
 }
 
 .bottom_section {
@@ -231,6 +260,12 @@ nav h3:hover {
 		left: 25px;
 		top: 10px;
 	}
+
+	.social {
+		bottom: 48%;
+		left: 3%;
+	}
+
 	.bottom_section {
 		padding-bottom: 50px;
 		/* align-items: center; */
@@ -241,5 +276,13 @@ nav h3:hover {
 		font-weight: 200;
 		font-size: 26px;
 		margin-bottom: 6px;
+	}
+}
+
+@media screen and (max-width: 389px) {
+	/* move these to a new spot */
+	.social {
+		bottom: 30%;
+		left: 2%;
 	}
 }
