@@ -154,7 +154,7 @@ nav h3:hover {
   /* background-color: #028dac; */
   height: 100%;
   width: 60%;
-  /* margin-right: 10px; */
+  margin-top: 4%;
 }
 
 .title h3 {
@@ -183,9 +183,9 @@ nav h3:hover {
 
 .lists li {
   padding-bottom: 5px;
-  margin-top: 0;
 }
 
+/* bottom list */
 .info {
   text-decoration: none;
   display: flex;
