@@ -40,6 +40,7 @@ nav h3:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	color: #fff;
 }
 
 .menu {
@@ -209,7 +210,7 @@ nav h3:hover {
 	}
 	nav {
 		justify-content: end;
-
+		color: #fff;
 		padding: 0;
 	}
 }
