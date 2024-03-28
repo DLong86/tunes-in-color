@@ -1,175 +1,202 @@
 body {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
-	font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* main divs */
 .container {
-	width: 100%;
-	background-image: url("/images/piano.jpg");
-	background-position: top left;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
+  width: 100%;
+  background-image: url("/images/piano.jpg");
+  background-position: top left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .main-box {
-	height: 100%;
-	width: 100%;
-	background-color: grey;
-	margin-top: 100px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .big-box {
-	position: relative;
-	background-color: #fff;
-	height: 700px;
-	width: 95%;
-	margin: 20px 0;
-	display: flex;
-	flex-direction: column;
-	border-radius: 8px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  background-color: #fff;
+  height: 700px;
+  width: 95%;
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .small-box {
-	height: 250px;
-	width: 250px;
-	background-color: pink;
-	border-radius: 8px;
-	background-image: url("/images/piano.jpg");
-	background-position: center;
-	background-size: cover;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	transition: ease-in-out;
+  height: 250px;
+  width: 250px;
+  background-color: pink;
+  border-radius: 8px;
+  background-image: url("/images/piano.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: ease-in-out;
+}
+
+.youtube-container {
+  height: 700px;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .youtube-box {
-	height: 400px;
-	width: 95%;
-	margin-bottom: 40px;
-	border-radius: 8px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	background-color: #fff;
+  height: 400px;
+  width: 95%;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: rgb(158, 105, 105);
 }
 
 /* internal text */
 .social {
-	font-size: 26px;
-	display: flex;
-	gap: 20px;
+  font-size: 26px;
+  display: flex;
+  gap: 20px;
 }
 .social,
 .titles p,
 .repertoire p {
-	color: #028dac;
+  color: #028dac;
 }
 .titles h3,
 .repertoire p {
-	font-family: "EB Garamond", serif;
+  font-family: "EB Garamond", serif;
 }
 
 .titles h3 {
-	font-size: 39px;
-	margin: 0;
-	margin-top: 8px;
-	padding-bottom: 0;
+  font-size: 39px;
+  margin: 0;
+  margin-top: 8px;
+  padding-bottom: 0;
 }
 
 .titles p {
-	margin: 4px 0;
-	font-size: 18px;
+  margin: 4px 0;
+  font-size: 18px;
 }
 
 .repertoire p {
-	font-style: italic;
-	margin-bottom: 0;
-	padding-bottom: 0;
+  font-style: italic;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .info-container {
-	height: 100%;
-	width: 90%;
-	margin: 10px auto;
-	/* background-color: blueviolet; */
+  height: 100%;
+  width: 90%;
+  margin: 10px auto;
+  /* background-color: blueviolet; */
 }
 
 .lists {
-	display: flex;
-	gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .lists ul {
-	list-style-type: none;
-	padding-left: 0;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .lists li {
-	padding-bottom: 8px;
+  padding-bottom: 8px;
 }
 
 .release,
 .code,
 .label {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	border-bottom: #00000052 solid 1px;
-	padding-bottom: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: #00000052 solid 1px;
+  padding-bottom: 1px;
 }
 .first {
-	width: 50%;
-	color: #028dac;
-	font-size: 16px;
-	font-style: italic;
-	font-family: "EB Garamond", serif;
+  width: 50%;
+  color: #028dac;
+  font-size: 16px;
+  font-style: italic;
+  font-family: "EB Garamond", serif;
 }
 
 .second {
-	width: 44%;
-	font-size: 13px;
+  width: 44%;
+  font-size: 13px;
 }
 
 .label {
-	border-bottom: 0;
+  border-bottom: 0;
 }
 
 @media screen and (min-width: 1000px) {
-	.main-box {
-		position: relative;
-		height: 100vh;
-		width: 100%;
-		margin-top: 0;
-		/* background-image: url("/images/piano.jpg");
+  .main-box {
+    position: relative;
+    height: 683px;
+    width: 1000px;
+    margin-top: 0;
+    /* background-image: url("/images/piano.jpg");
 		background-position: top left;
 		background-size: cover; */
-		background-color: grey;
-	}
-	.big-box {
-		height: 683px;
-		width: 830px;
-		margin-top: 100px;
-	}
+    background-color: grey;
+  }
+  .big-box {
+    position: relative;
+    height: 100vh;
+    width: 830px;
+    /* margin-top: 100px; */
+    /* left: 50%;
+    transform: translateX(-50%); */
+  }
 
-	.youtube-box {
-		height: 800px;
-		width: 100%;
-		margin-bottom: 0;
-	}
+  .youtube-container {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 0;
+  }
 
-	.small-box {
-		position: absolute;
-		top: 15%;
-		left: 10%;
-		height: 362px;
-		width: 362px;
-		z-index: 999;
-	}
+  .youtube-box {
+    width: 830px;
+  }
+
+  .small-box {
+    position: absolute;
+    top: 6%;
+    left: 0%;
+    height: 362px;
+    width: 362px;
+    z-index: 999;
+  }
+
+  .info-container {
+    background-color: rgb(201, 201, 201);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+    margin: 0;
+  }
 }
