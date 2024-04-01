@@ -16,17 +16,85 @@ a:active {
 	color: inherit;
 }
 
+/* dropdown nav ??????? */
+.navigation {
+	position: fixed;
+	top: 0;
+	right: -150%;
+	width: 100vw;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: inherit;
+	transition: right 0.8s ease;
+	z-index: 999;
+}
+/* Styles for when navigation is open */
+.nav-open .container,
+.nav-open nav {
+	backdrop-filter: blur(5px);
+}
+.nav-open .left,
+.nav-open .right,
+.nav-open .middle {
+	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
+	opacity: 0.4;
+	backdrop-filter: blur(5px);
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0.072);
+}
+.navigation.show {
+	right: 0;
+}
+.nav-links {
+	display: flex;
+	gap: 20px;
+	padding-right: 20px;
+}
+.social_links,
+.page-links {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	font-weight: 600;
+	font-size: 14px;
+}
+.social_links {
+	border-right: #000 solid 1px;
+	padding-right: 20px;
+}
+
+.nav-title h1 {
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.social_links li:hover,
+.page-links li:hover,
+.nav-title h1:hover {
+	transition: 0.5s ease-in-out;
+	color: #b1b1b1;
+}
+
 /* Div containing burger menu plus "MENU" text */
 .menu {
 	display: flex;
 	align-items: center;
 	justify-content: end;
 	padding: 0 20px;
+	padding-bottom: 0;
 	color: #000;
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 18px;
-	margin-bottom: 20px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 999;
 }
 
 .menu p {
@@ -39,6 +107,7 @@ a:active {
 }
 /* container housing the five cards */
 .container {
+	position: relative;
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -48,7 +117,8 @@ a:active {
 	text-transform: uppercase;
 	color: #fff;
 	/* componsate for the nav and re-center  */
-	margin-top: -50px;
+	margin-top: 0;
+	z-index: 1;
 }
 
 /* Left and right containers, for the four small cards */

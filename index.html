@@ -22,10 +22,37 @@
 		/>
 	</head>
 	<body>
+		<div class="navigation">
+			<div class="nav-title">
+				<h1><a href="/index.html">Yohanan Cinnamon</a></h1>
+			</div>
+			<div class="nav-links">
+				<ul class="social_links">
+					<!-- <li>
+						<i class="fa-solid fa-phone"></i>
+						<a>01765 345 675</a>
+					</li> -->
+					<li>
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-regular fa-envelope"></i></a>
+					</li>
+				</ul>
+				<ul class="page-links">
+					<li><a href="/music_7.html">Music</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
 		<nav>
 			<div class="menu">
-				<i class="fa-solid fa-bars"></i>
-				<p>Menu</p>
+				<i class="fa-solid fa-bars" onclick="toggleNavigation()"></i>
+				<p onclick="toggleNavigation()">Menu</p>
 			</div>
 		</nav>
 
@@ -67,5 +94,6 @@
 				</div>
 			</div>
 		</section>
+		<script src="/nav.js"></script>
 	</body>
 </html>
