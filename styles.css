@@ -2,10 +2,11 @@
 body {
 	box-sizing: border-box;
 	margin: 0;
-	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
+
+	background-image: url('./images/photo-1555181937-efe4e074a301.avif');
 	background-size: cover;
 	background-position: center;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a,
@@ -83,7 +84,12 @@ a:active {
 	transition: 0.3s ease-in-out;
 	color: rgba(0, 0, 0, 0.507);
 }
-
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
 /* Div containing burger menu plus "MENU" text */
 .menu {
 	display: flex;
@@ -109,6 +115,12 @@ a:active {
 .menu i {
 	cursor: pointer;
 }
+
+.menu p:hover,
+.menu i:hover {
+	opacity: 50%;
+	transition: 0.3s ease;
+}
 /* container housing the five cards */
 .container {
 	position: relative;
@@ -120,6 +132,7 @@ a:active {
 	height: 100vh;
 	text-transform: uppercase;
 	color: #fff;
+	background-color: #f2f2f280;
 	/* componsate for the nav and re-center  */
 	margin-top: 0;
 	z-index: 1;
@@ -133,6 +146,21 @@ a:active {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	font-weight: 400;
+}
+
+.left h5,
+.right h5 {
+	font-family: 'EB Garamond', serif;
+	font-size: 14px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.left p,
+.right p {
+	margin-top: 0;
+	padding-top: 0;
 }
 
 /* Four small cards */
@@ -140,7 +168,7 @@ a:active {
 	position: relative;
 	height: 260px;
 	width: 260px;
-	border-radius: 10px;
+	border-radius: 7px;
 	background-position: center;
 	background-size: cover;
 	display: flex;
@@ -155,13 +183,13 @@ a:active {
 
 /* Background blur on hover - styles */
 .box1::before {
-	content: "";
+	content: '';
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: #f2f2f230;
 	opacity: 0;
 	transition: opacity 0.3s ease;
 }
@@ -175,6 +203,8 @@ a:active {
 	position: relative;
 	z-index: 1;
 	transition: color 0.3s ease;
+	margin: 0;
+	padding: 0;
 }
 
 .box1:hover p,
@@ -183,23 +213,19 @@ a:active {
 }
 /* up - Background blur - up */
 
-.box1 p {
-	margin: 0;
-	padding: 0;
-}
 .box1 h5 {
-	margin: 5px;
+	/* margin: 5px; */
 	font-size: 27px;
 }
 
 /* Pictures inside the four box1 divs */
 .pic1 {
-	background-image: url("./images//generic.jpg");
+	background-image: url('./images//generic.jpg');
 }
 .pic2,
 .pic3,
 .pic4 {
-	background-image: url("./images//dog.jpg");
+	background-image: url('./images//dog.jpg');
 }
 
 /* hyperlink arrows */
@@ -229,7 +255,7 @@ a:active {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-	background-image: url("./images//hand.jpg");
+	background-image: url('./images//hand.jpg');
 	background-position: center;
 	background-size: cover;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -252,31 +278,52 @@ a:active {
 
 .banner h2 {
 	font-size: 32px;
-	font-weight: 300;
-	opacity: 0.5;
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 }
 .banner h3 {
-	font-family: "EB Garamond", serif;
+	font-family: 'EB Garamond', serif;
+	color: rgba(255, 255, 255, 0.7);
 	margin: 0;
+	font-size: 26px;
 	font-weight: 100;
-	font-weight: lighter;
+	font-weight: 400;
 }
 /* horizontal line seperating text on center card */
 .line {
-	width: 60px;
-	opacity: 0.8;
+	width: 50px;
+	height: 1px;
+	background-color: #fff;
+	margin: 8px 0;
 }
 
 /* Responsive */
 
 @media screen and (max-width: 1250px) {
+	.menu {
+		padding: 12px 20px 0 0;
+	}
+
+	.menu p {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav i {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+@media screen and (max-width: 1000px) {
 	.main {
 		flex-direction: column;
 	}
 
 	.container {
-		margin-top: 50px;
+		padding-top: 50px;
 		flex-direction: column;
 		height: 100%;
 	}
@@ -321,24 +368,6 @@ a:active {
 		width: 100%;
 		margin: 0 8px;
 	}
-
-	.menu {
-		padding: 12px 20px 0 0;
-	}
-
-	.menu p {
-		display: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	nav i {
-		margin: 0;
-		padding: 0;
-	}
-}
-
-@media screen and (max-width: 1000px) {
 	.navigation {
 		height: 270px;
 		background-color: #fff;

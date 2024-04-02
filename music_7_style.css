@@ -2,10 +2,10 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
+	background-image: url('./images/photo-1555181937-efe4e074a301.avif');
 	background-size: cover;
 	background-position: center;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	min-height: 100vh;
 }
 
@@ -137,7 +137,7 @@ nav h3:hover {
 }
 
 .tunes_text {
-	font-family: "EB Garamond", serif;
+	font-family: 'EB Garamond', serif;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -314,8 +314,6 @@ nav h3:hover {
 
 @media screen and (max-height: 700px) {
 	.slider-container {
-		.slider-container {
-			max-height: calc(100vh - 50px); /* Adjust maximum height */
-		}
+		max-height: calc(100vh - 50px); /* Adjust maximum height */
 	}
 }
