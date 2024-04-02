@@ -13,15 +13,90 @@ a:active {
 	color: inherit;
 }
 
-nav {
+/* dropdown nav ??????? */
+.navigation {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100vw;
+	height: 60px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	background-color: inherit;
+	transition: top 0.3s ease;
+	z-index: 999;
+	backdrop-filter: blur(5px);
+}
+/* Styles for when navigation is open */
+.nav-open .container,
+.nav-open nav {
+	backdrop-filter: blur(5px);
+}
+.nav-open nav {
+	display: none;
+}
+.nav-open .main,
+/* .nav-open .body, */
+.nav-open .container {
+	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
+	opacity: 0.4;
+	backdrop-filter: blur(5px);
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0.072);
+}
+.navigation.show {
+	top: 0;
+}
+.nav-links {
+	display: flex;
+	gap: 20px;
+	padding-right: 20px;
+}
+.social_links,
+.page-links {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	font-weight: 600;
+	font-size: 14px;
+}
+.social_links {
+	border-right: #000 solid 1px;
+	padding-right: 20px;
+}
+
+.nav-title h1 {
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.social_links li:hover,
+.page-links li:hover,
+.nav-title h1:hover {
+	transition: 0.3s ease-in-out;
+	color: rgba(0, 0, 0, 0.507);
+}
+
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: transparent;
+	width: 100%;
 }
 
 nav h3 {
 	padding-left: 20px;
 	text-transform: uppercase;
+
+	z-index: 999;
 }
 nav h3:hover {
 	color: rgba(0, 0, 0, 0.7);
@@ -29,10 +104,11 @@ nav h3:hover {
 }
 
 .menu-wrapper {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	/* padding: 20px; */
+
 	z-index: 999; /* Ensure the menu icon stays above other content */
 }
 
@@ -40,7 +116,7 @@ nav h3:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #fff;
+	color: #000;
 }
 
 .menu {
@@ -70,6 +146,7 @@ nav h3:hover {
 	background-image: url("/images/fish.jpg");
 	background-size: cover;
 	background-position: center;
+	transition: 0.5s ease;
 }
 
 /* Fade bottom of main image */
@@ -224,5 +301,45 @@ nav h3:hover {
 
 	.about_section {
 		width: 80%;
+	}
+}
+
+/* nav resposive */
+@media screen and (max-width: 1000px) {
+	.navigation {
+		height: 270px;
+		background-color: #fff;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: stretch;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.page-links {
+		order: 1;
+		gap: 30px;
+		margin: 30px 0;
+	}
+
+	.social_links {
+		order: 2;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-left: 20px;
+		border-right: 0;
+		color: grey;
+	}
+	.page-links {
+		border-right: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 20px;
 	}
 }

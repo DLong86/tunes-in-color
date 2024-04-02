@@ -15,9 +15,78 @@ a:active {
 	text-decoration: none;
 	color: inherit;
 }
+/* dropdown nav ??????? */
+.navigation {
+	position: fixed;
+	top: -100%;
+	left: 0;
+	width: 100vw;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: inherit;
+	transition: top 0.3s ease;
+	z-index: 999;
+	backdrop-filter: blur(5px);
+}
+/* Styles for when navigation is open */
+.nav-open .container,
+.nav-open nav {
+	backdrop-filter: blur(5px);
+}
+.nav-open nav {
+	display: none;
+}
+.nav-open .main {
+	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
+	opacity: 0.4;
+	backdrop-filter: blur(5px);
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0.072);
+}
+.navigation.show {
+	top: 0;
+}
+.nav-links {
+	display: flex;
+	gap: 20px;
+	padding-right: 20px;
+}
+.social_links,
+.page-links {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	list-style-type: none;
+	padding-left: 0;
+	margin: 0;
+	font-weight: 600;
+	font-size: 14px;
+}
+.social_links {
+	border-right: #000 solid 1px;
+	padding-right: 20px;
+}
+
+.nav-title h1 {
+	font-size: 20px;
+	padding-left: 20px;
+}
+
+.social_links li:hover,
+.page-links li:hover,
+.nav-title h1:hover {
+	transition: 0.3s ease-in-out;
+	color: rgba(0, 0, 0, 0.507);
+}
 
 /* complete nav bar styling */
 nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -59,6 +128,7 @@ nav h3:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	transition: 0.5s ease;
 }
 
 /* card div */
@@ -66,7 +136,6 @@ nav h3:hover {
 	width: 660px;
 	height: 80%;
 	background-color: #fff;
-	margin-top: -100px;
 	border-radius: 10px;
 	display: flex;
 	flex-direction: column;
@@ -97,28 +166,28 @@ nav h3:hover {
 	justify-content: center;
 }
 
-ul {
+.contact_details ul {
 	list-style-type: none;
 	padding-left: 0;
 	margin-left: 0;
 	font-family: "EB Garamond", serif;
 }
 
-li {
+.contact_details li {
 	margin-top: 20px;
 	font-size: 22px;
 }
 
-li:hover {
+.contact_details li:hover {
 	color: rgba(0, 0, 0, 0.7);
 	transition: 0.2s;
 }
 
-li:first-child {
+.contact_details li:first-child {
 	margin-top: 0;
 }
 
-li i {
+.contact_details li i {
 	margin-right: 26px;
 	color: #028dac;
 	font-size: 14px;
@@ -154,5 +223,68 @@ li i {
 	li {
 		font-size: 16px;
 		margin-top: 6px;
+	}
+}
+
+/* nav resposive */
+@media screen and (max-width: 1000px) {
+	.navigation {
+		height: 270px;
+		background-color: #fff;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: stretch;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.page-links {
+		order: 1;
+		gap: 30px;
+		margin: 30px 0;
+	}
+
+	.social_links {
+		order: 2;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-left: 20px;
+		border-right: 0;
+		color: grey;
+	}
+	.page-links {
+		border-right: none;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding-left: 20px;
+	}
+	.menu {
+		padding: 20px;
+	}
+
+	.menu p {
+		display: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	nav h3 {
+		display: none;
+	}
+
+	nav i {
+		margin: 0;
+		padding: 0;
+	}
+	nav {
+		justify-content: end;
+		color: #fff;
+		padding: 0;
 	}
 }

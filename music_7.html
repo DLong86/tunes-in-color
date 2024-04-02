@@ -28,36 +28,66 @@
 		/>
 	</head>
 	<body>
+		<div class="navigation">
+			<div class="nav-title">
+				<h1><a href="/index.html">Yohanan Cinnamon</a></h1>
+			</div>
+			<div class="nav-links">
+				<ul class="social_links">
+					<!-- <li>
+						<i class="fa-solid fa-phone"></i>
+						<a>01765 345 675</a>
+					</li> -->
+					<li>
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-regular fa-envelope"></i></a>
+					</li>
+				</ul>
+				<ul class="page-links">
+					<li><a href="/music_7.html">Music</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
 		<nav>
 			<h3><a href="/index.html">yohanan Cinnamon</a></h3>
 			<div class="menu">
-				<a href="/index.html"><i class="fa-solid fa-bars"></i></a>
-				<p>Menu</p>
+				<i class="fa-solid fa-bars" onclick="toggleNavigation()"></i>
+				<p onclick="toggleNavigation()">Menu</p>
 			</div>
 		</nav>
-		<div class="main">
-			<div class="tunes_text">
-				<h3>Tunes in Colour</h3>
-				<p>
-					Musical instruments, with all their different sounds and shapes, are
-					great metaphors for people. <br />
-
-					the music herein is all about coming together of melody and colour,
-					and the desire to enchant.
-				</p>
-			</div>
-			<div class="slider-container">
-				<div class="slider">
-					<img src="/images/dog.jpg" alt="Image 1" />
-					<img src="/images/generic.jpg" alt="Image 2" />
-					<img src="/images/hand.jpg" alt="Image 3" />
-					<img src="/images/generic.jpg" alt="Image 2" />
-					<img src="/images/hand.jpg" alt="Image 3" />
+		<div class="container">
+			<div class="main">
+				<div class="tunes_text">
+					<h3>Tunes in Colour</h3>
+					<div class="line"></div>
+					<p>
+						Musical instruments, with all their different sounds and shapes, are
+						great metaphors for people. <br />
+						the music herein is all about coming together of melody and colour,
+						and the desire to enchant.
+					</p>
 				</div>
-				<button class="prev-btn" onclick="prevSlide()">&#10094;</button>
-				<button class="next-btn" onclick="nextSlide()">&#10095;</button>
+				<div class="slider-container">
+					<div class="slider">
+						<img src="/images/dog.jpg" alt="Image 1" />
+						<img src="/images/generic.jpg" alt="Image 2" />
+						<img src="/images/hand.jpg" alt="Image 3" />
+						<img src="/images/generic.jpg" alt="Image 2" />
+						<img src="/images/hand.jpg" alt="Image 3" />
+					</div>
+					<button class="prev-btn" onclick="prevSlide()">&#10094;</button>
+					<button class="next-btn" onclick="nextSlide()">&#10095;</button>
+				</div>
 			</div>
 		</div>
+		<script src="nav.js"></script>
 		<script src="script.js"></script>
 	</body>
 </html>

@@ -22,16 +22,43 @@
 		/>
 	</head>
 	<body>
-		<div class="container">
-			<nav>
-				<h3><a href="/index.html">yohanan Cinnamon</a></h3>
-				<div class="menu-wrapper">
-					<div class="menu">
-						<a href="/index.html"><i class="fa-solid fa-bars"></i></a>
-						<p>Menu</p>
-					</div>
+		<div class="navigation">
+			<div class="nav-title">
+				<h1><a href="/index.html">Yohanan Cinnamon</a></h1>
+			</div>
+			<div class="nav-links">
+				<ul class="social_links">
+					<!-- <li>
+						<i class="fa-solid fa-phone"></i>
+						<a>01765 345 675</a>
+					</li> -->
+					<li>
+						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="#"><i class="fa-regular fa-envelope"></i></a>
+					</li>
+				</ul>
+				<ul class="page-links">
+					<li><a href="/music_7.html">Music</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+		<nav>
+			<h3><a href="/index.html">yohanan Cinnamon</a></h3>
+			<div class="menu-wrapper">
+				<div class="menu">
+					<i class="fa-solid fa-bars" onclick="toggleNavigation()"></i>
+					<p onclick="toggleNavigation()">Menu</p>
 				</div>
-			</nav>
+			</div>
+		</nav>
+		<div class="container">
 			<div class="main">
 				<div class="about_section">
 					<header class="header">
@@ -104,10 +131,11 @@
 					<div class="music_link">
 						<p>Discover My</p>
 						<h1>MUSIC</h1>
-						<i class="fa-solid fa-arrow-right"></i>
+						<a href="/music_7.html"><i class="fa-solid fa-arrow-right"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
+		<script src="/nav.js"></script>
 	</body>
 </html>
