@@ -2,10 +2,10 @@
 body {
 	box-sizing: border-box;
 	margin: 0;
-	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
+	background-image: url('./images/photo-1555181937-efe4e074a301.avif');
 	background-size: cover;
 	background-position: center;
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a,
@@ -90,6 +90,8 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	color: #000;
+	z-index: 999;
 }
 
 nav h3 {
@@ -123,12 +125,14 @@ nav h3:hover {
 
 /* Page container */
 .container {
+	position: relative;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	transition: 0.5s ease;
+	background-color: #f2f2f280;
 }
 
 /* card div */
@@ -152,14 +156,14 @@ nav h3:hover {
 .portrait_image {
 	background-color: rgb(230, 230, 230);
 	border-radius: 10px 10px 0 0;
-	background-image: url("./images/hand.jpg");
+	background-image: url('./images/hand.jpg');
 	background-position: center;
 	background-size: cover;
 }
 /* bottom div with social etc */
 .contact_details {
 	background-color: #fff;
-	border-radius: 0 0 10px 10px;
+	border-radius: 0 0 15px 15px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -170,12 +174,12 @@ nav h3:hover {
 	list-style-type: none;
 	padding-left: 0;
 	margin-left: 0;
-	font-family: "EB Garamond", serif;
+	font-family: 'EB Garamond', serif;
 }
 
 .contact_details li {
 	margin-top: 20px;
-	font-size: 22px;
+	font-size: 24px;
 }
 
 .contact_details li:hover {
@@ -190,7 +194,7 @@ nav h3:hover {
 .contact_details li i {
 	margin-right: 26px;
 	color: #028dac;
-	font-size: 14px;
+	font-size: 16px;
 }
 
 /* smaller screens (Ipad) */
@@ -216,6 +220,21 @@ nav h3:hover {
 	.main {
 		width: 90%;
 	}
+	.contact_details {
+		background-color: #fff;
+		border-radius: 0 0 15px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* justify-content: space-around; */
+	}
+	.contact_details ul {
+		margin: 0;
+	}
+	.contact_details li {
+		margin-top: 15px;
+		font-size: 22px;
+	}
 }
 
 /* responsive styling - for height to prevent contact links overflowing outside ".contact_details" div */
@@ -223,6 +242,11 @@ nav h3:hover {
 	li {
 		font-size: 16px;
 		margin-top: 6px;
+	}
+
+	.contact_details li {
+		margin: 10px 0;
+		font-size: 20px;
 	}
 }
 
