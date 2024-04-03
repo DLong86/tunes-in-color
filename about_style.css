@@ -90,6 +90,7 @@ nav {
 	justify-content: space-between;
 	background-color: transparent;
 	width: 100%;
+	color: #fff;
 }
 
 nav h3 {
@@ -104,7 +105,7 @@ nav h3:hover {
 }
 
 .menu-wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: 0;
 	/* padding: 20px; */
@@ -116,7 +117,6 @@ nav h3:hover {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #000;
 }
 
 .menu {
@@ -124,7 +124,7 @@ nav h3:hover {
 	align-items: center;
 	justify-content: end;
 	padding: 0 20px;
-	color: #000;
+
 	font-weight: 600;
 	text-transform: uppercase;
 	font-size: 18px;
@@ -143,9 +143,10 @@ nav h3:hover {
 	position: relative;
 	width: 100%;
 	height: 100vh;
-	background-image: url("/images/fish.jpg");
+	background-image: url("./images/about-yohanan-cinnamon.webp");
 	background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 	transition: 0.5s ease;
 }
 
@@ -165,22 +166,33 @@ nav h3:hover {
 }
 
 .main {
-	position: absolute;
-	top: 50%;
-	left: 15%;
+	position: relative;
+	top: 60%;
+	left: 0;
 	height: 100%;
-	width: 70%;
-	background-color: #fff;
+	width: 100%;
 	margin: 0 auto;
-	border-radius: 8px 8px 0 0;
+}
+
+.about-container {
+	width: 1000px;
+	background-color: #fff;
+	border-radius: 10px 10px 0 0;
+	margin: 0 auto;
 	padding: 60px 0;
 }
 
 .about_section {
-	width: 70%;
+	position: relative;
+	width: 830px;
+	background-color: #fff;
 	margin: 0 auto;
-	line-height: 35px;
+	line-height: 40px;
 	font-size: 20px;
+}
+
+.about_section p {
+	font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -194,8 +206,12 @@ nav h3:hover {
 }
 
 .header p {
+	font-family: "EB Garamond", serif;
+	font-style: italic;
+	font-size: 28px;
 	margin-top: 0;
 	padding-top: 0;
+	color: #00000050;
 }
 
 .images {
@@ -209,63 +225,101 @@ nav h3:hover {
 }
 
 .images img {
-	width: 50%;
+	width: 405px;
 	height: 275px;
 	border-radius: 8px;
 }
 
 .quote {
-	border-left: #b68c5e solid 2px;
+	border-left: #b68c5e solid 3px;
 	padding: 0 30px;
+	margin: 35px 0;
 	font-family: "EB Garamond", serif;
-	font-size: 24px;
-	font-size: 200;
+	font-size: 29px;
+}
+.quote p {
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+	margin: 0;
 }
 
 .quote_cite {
 	color: #b68c5e;
 	font-style: italic;
+	font-size: 19px;
+	margin: 0;
 }
 
 .music_link {
+	position: absolute;
+	left: 0;
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin-top: 50px;
 	padding-bottom: 100px;
+	width: 100vw;
+	background-image: url("./images/musical-wave.png");
+	background-position: center;
+	background-size: cover;
+	z-index: 999;
 }
 
 .music_link p {
+	font-family: "EB Garamond", serif;
+	text-transform: uppercase;
+	font-size: 18px;
 	margin-bottom: 0;
+
 	padding-bottom: 0;
 	font-weight: 200;
 }
 .music_link h1 {
+	font-size: 54px;
+	font-weight: 600;
 	margin-top: 0;
+	margin-bottom: 20px;
 	padding-top: 0;
 }
 
-@media screen and (max-width: 900px) {
+.music_link i {
+	font-size: 27px;
+}
+.music_link i:hover {
+	color: #00000050;
+	transition: 0.3s ease;
+}
+
+@media screen and (max-width: 1000px) {
 	.container {
 		display: flex;
 		flex-direction: column;
 	}
-	.main {
+
+	.about-container {
 		display: block;
 		width: 100%;
-		top: 80%;
-		left: 0;
+		padding: 10px 0;
 		border-radius: 0;
 	}
+
+	.about_section {
+		width: 90%;
+	}
+
 	.header h3 {
 		font-size: 24px;
 	}
-	.images {
-		flex-direction: column;
+
+	.header p {
+		margin-bottom: 0;
+		padding-bottom: 0;
 	}
+
 	.images img {
-		width: 100%;
+		width: 50%;
 	}
 	.menu {
 		padding: 20px;
@@ -277,26 +331,31 @@ nav h3:hover {
 		padding: 0;
 	}
 
-	nav h3 {
-		display: none;
-	}
-
 	nav i {
 		margin: 0;
 		padding: 0;
 	}
 	nav {
-		justify-content: end;
 		color: #fff;
 		padding: 0;
 	}
 }
 @media screen and (max-width: 600px) {
+	.header {
+		margin-bottom: 25px;
+	}
 	.header h3 {
 		font-size: 20px;
 	}
 	.main {
 		top: 70%;
+	}
+
+	.images {
+		flex-direction: column;
+	}
+	.images img {
+		width: 100%;
 	}
 
 	.about_section {
