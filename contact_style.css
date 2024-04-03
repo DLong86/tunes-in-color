@@ -290,17 +290,8 @@ nav h3:hover {
 		padding: 0;
 	}
 
-	nav h3 {
-		display: none;
-	}
-
 	nav i {
 		margin: 0;
-		padding: 0;
-	}
-	nav {
-		justify-content: end;
-		color: #fff;
 		padding: 0;
 	}
 }
