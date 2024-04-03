@@ -305,6 +305,11 @@ nav {
 /* Responsive */
 
 @media screen and (max-width: 1250px) {
+	.container {
+		padding-bottom: 40px;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 	.menu {
 		padding: 12px 20px 0 0;
 	}
@@ -342,6 +347,9 @@ nav {
 		justify-content: center;
 		box-shadow: none;
 	}
+	.box1 {
+		width: 45%;
+	}
 
 	.box2 {
 		width: 80%;
@@ -368,15 +376,15 @@ nav {
 	}
 
 	.left {
-		margin-top: 50px;
+		/* margin-top: 50px; */
 	}
 
 	.right {
-		margin-bottom: 50px;
+		/* margin-bottom: 50px; */
 	}
 
 	.box1 {
-		width: 50%;
+		/* width: 50%; */
 		margin: 0 8px;
 	}
 	.navigation {
@@ -418,6 +426,9 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
+	.box1 {
+		width: 100%;
+	}
 	.left,
 	.right {
 		width: 80%;
