@@ -2,10 +2,10 @@
 body {
 	box-sizing: border-box;
 	margin: 0;
-	background-image: url('./images/photo-1555181937-efe4e074a301.avif');
+	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
 	background-size: cover;
 	background-position: center;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 }
 
 a,
@@ -138,30 +138,36 @@ nav h3:hover {
 /* card div */
 .main {
 	width: 660px;
-	height: 80%;
+	height: 646px;
 	background-color: #fff;
 	border-radius: 10px;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-direction: column;
 	box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .portrait_image,
 .contact_details {
-	width: 100%;
-	height: 50%;
+	/* width: 100%;
+	height: 50%; */
 	margin: 0;
 }
 /* top div with image */
 .portrait_image {
+	height: 338px;
+	width: 100%;
 	background-color: rgb(230, 230, 230);
 	border-radius: 10px 10px 0 0;
-	background-image: url('./images/hand.jpg');
+	background-image: url("./images/hand.jpg");
 	background-position: center;
 	background-size: cover;
 }
 /* bottom div with social etc */
 .contact_details {
+	height: 308px;
+	width: 100%;
 	background-color: #fff;
 	border-radius: 0 0 15px 15px;
 	display: flex;
@@ -174,7 +180,7 @@ nav h3:hover {
 	list-style-type: none;
 	padding-left: 0;
 	margin-left: 0;
-	font-family: 'EB Garamond', serif;
+	font-family: "EB Garamond", serif;
 }
 
 .contact_details li {
@@ -192,27 +198,9 @@ nav h3:hover {
 }
 
 .contact_details li i {
-	margin-right: 26px;
+	margin-right: 15px;
 	color: #028dac;
 	font-size: 16px;
-}
-
-/* smaller screens (Ipad) */
-@media screen and (max-width: 1240px) {
-	.menu {
-		padding: 0 20px 0 0;
-	}
-
-	.menu p {
-		display: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	nav i {
-		margin: 0;
-		padding: 0;
-	}
 }
 
 /* Mobile */
@@ -239,6 +227,10 @@ nav h3:hover {
 
 /* responsive styling - for height to prevent contact links overflowing outside ".contact_details" div */
 @media screen and (max-height: 450px) {
+	.container {
+		height: 100%;
+		padding: 100px 0;
+	}
 	li {
 		font-size: 16px;
 		margin-top: 6px;
