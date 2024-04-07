@@ -1,16 +1,16 @@
 /* main divs */
 .container {
-	background-image: url("../images/music-album-piano-strings.webp");
+	background-image: url('../images/music-album-piano-strings.webp');
 }
 
 .small-box {
-	background-image: url("../images/music-album-piano-strings.webp");
+	background-image: url('../images/music-album-piano-strings.webp');
 }
 
 .titles h3,
 .repertoire p,
 .youtube-container h1 {
-	font-family: "EB Garamond", serif;
+	font-family: 'EB Garamond', serif;
 }
 
 .titles h3 {
