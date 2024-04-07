@@ -376,6 +376,7 @@ iframe {
 .play-list p {
 	padding-left: 10px;
 	margin: 0;
+	font-weight: 400;
 }
 
 .play-list ul li.active {
