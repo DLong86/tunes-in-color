@@ -1,16 +1,16 @@
 /* main divs */
 .container {
-	background-image: url('../images/music-album-piano-strings.webp');
+	background-image: url("../images/music-album-piano-strings.webp");
 }
 
 .small-box {
-	background-image: url('../images/music-album-piano-strings.webp');
+	background-image: url("../images/music-album-piano-strings.webp");
 }
 
 .titles h3,
 .repertoire p,
 .youtube-container h1 {
-	font-family: 'EB Garamond', serif;
+	font-family: "EB Garamond", serif;
 }
 
 .titles h3 {
@@ -19,10 +19,10 @@
 }
 
 /* Bottom section with youtube video */
-.youtube-container {
+.youtube-container2 {
 	position: relative;
 	z-index: 2;
-	height: 600px;
+	height: 100%;
 	width: 100%;
 	background-color: #fff;
 	display: flex;
@@ -31,43 +31,45 @@
 	padding-bottom: 100px;
 }
 
-.youtube-box {
-	height: 400px;
+.youtube-box2 {
+	height: 200px;
 	width: 95%;
 	margin: 0 auto;
 	margin-bottom: 10px;
 	border-radius: 8px;
-	background-color: rgb(158, 105, 105);
+	/* background-color: rgb(158, 105, 105); */
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.youtube-box iframe {
+.youtube-box2 iframe {
 	border-radius: 8px;
+	height: 200px;
 }
 
-.youtube-container h1 {
-	font-size: 28px;
+.youtube-container2 h1 {
+	font-size: 24px;
 	margin: 20px auto;
 	margin-top: 40px;
 	font-weight: normal;
 }
 
-.youtube-container .no-border {
+.youtube-container2 .no-border {
 	border: 0;
 }
 
 .play-list {
 	display: flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: space-between;
 	width: 95%;
+	height: 100%;
 	margin: 0 auto;
 }
 .play-list ul {
 	list-style-type: none;
 	padding-left: 0;
-	width: 405px;
-	margin-right: 15px;
+	width: 100%;
+	/* margin-right: 15px; */
 }
 .play-list p {
 	padding: 0;
@@ -98,6 +100,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	width: 100%;
 }
 
 .menu {
@@ -105,20 +108,25 @@
 }
 
 @media screen and (min-width: 1000px) {
-	.youtube-container {
-		height: 1000px;
+	.youtube-container2 {
+		height: 100%;
 		width: 100%;
 		margin-bottom: 0;
 	}
 
-	.youtube-box {
-		width: 830px;
-		height: 456px;
-		margin-top: 20px;
-		margin-bottom: 20px;
+	.youtube-box2 {
+		width: 828px;
+		height: 455.83px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 
-	.youtube-container h1 {
+	.youtube-box2 iframe {
+		border-radius: 8px;
+		height: 100%;
+	}
+
+	.youtube-container2 h1 {
 		font-size: 34px;
 		font-weight: normal;
 	}
@@ -143,7 +151,7 @@
 		font-size: 18px;
 	}
 
-	.youtube-container h1 {
+	.youtube-container2 h1 {
 		font-weight: normal;
 		width: 830px;
 		margin: 0 auto;
@@ -160,5 +168,18 @@
 	.lists {
 		display: flex;
 		gap: 150px;
+	}
+
+	.youtube-container2 .no-border {
+		border: 0;
+	}
+
+	.youtube-box2 {
+		height: 300px;
+	}
+
+	.youtube-box2 iframe {
+		border-radius: 8px;
+		height: 300px;
 	}
 }
