@@ -13,31 +13,16 @@ a:active {
 	color: inherit;
 }
 
-/* dropdown nav ??????? */
-.navigation {
-	position: fixed;
-	top: -100%;
-	left: 0;
-	width: 100vw;
-	height: 60px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: inherit;
-	transition: top 0.3s ease;
-	z-index: 999;
-	backdrop-filter: blur(5px);
-}
 /* Styles for when navigation is open */
 .nav-open .container,
 .nav-open nav {
 	backdrop-filter: blur(5px);
 }
 .nav-open nav {
-	display: none;
+	color: transparent;
+	transition: 0.3s ease-in-out;
 }
-.nav-open .main,
-/* .nav-open .body, */
+
 .nav-open .container {
 	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
 	opacity: 0.4;
@@ -45,40 +30,10 @@ a:active {
 	z-index: 0;
 	background-color: rgba(255, 255, 255, 0.072);
 }
-.navigation.show {
-	top: 0;
-}
-.nav-links {
-	display: flex;
-	gap: 20px;
-	padding-right: 20px;
-}
-.social_links,
-.page-links {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	list-style-type: none;
-	padding-left: 0;
-	margin: 0;
-	font-weight: 600;
-	font-size: 14px;
-}
-.social_links {
-	border-right: #000 solid 1px;
-	padding-right: 20px;
-}
 
 .nav-title h1 {
 	font-size: 20px;
 	padding-left: 20px;
-}
-
-.social_links li:hover,
-.page-links li:hover,
-.nav-title h1:hover {
-	transition: 0.3s ease-in-out;
-	color: rgba(0, 0, 0, 0.507);
 }
 
 nav {
@@ -93,50 +48,22 @@ nav {
 	color: #fff;
 }
 
+/* doesn't work!!!!! */
 nav h3 {
-	padding-left: 20px;
-	text-transform: uppercase;
-
 	z-index: 999;
 }
+
 nav h3:hover {
 	color: rgba(0, 0, 0, 0.7);
 	transition: 0.2s;
 }
 
-.menu-wrapper {
-	position: fixed;
-	top: 0;
-	right: 0;
-	/* padding: 20px; */
-
-	z-index: 999; /* Ensure the menu icon stays above other content */
-}
-
 .menu-wrapper .menu {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	color: #fff;
 }
 
-.menu {
-	display: flex;
-	align-items: center;
-	justify-content: end;
-	padding: 0 20px;
-
-	font-weight: 600;
-	text-transform: uppercase;
-	font-size: 18px;
-}
-
-.menu p {
-	margin-left: 10px;
-}
-
-.menu p,
-.menu i {
-	cursor: pointer;
+.burger-menu .lines {
+	background-color: #fff;
 }
 
 .container {
@@ -321,24 +248,6 @@ nav h3:hover {
 	.images img {
 		width: 50%;
 	}
-	.menu {
-		padding: 20px;
-	}
-
-	.menu p {
-		display: none;
-		margin: 0;
-		padding: 0;
-	}
-
-	nav i {
-		margin: 0;
-		padding: 0;
-	}
-	nav {
-		color: #fff;
-		padding: 0;
-	}
 }
 @media screen and (max-width: 600px) {
 	.header {
@@ -360,45 +269,5 @@ nav h3:hover {
 
 	.about_section {
 		width: 80%;
-	}
-}
-
-/* nav resposive */
-@media screen and (max-width: 1000px) {
-	.navigation {
-		height: 270px;
-		background-color: #fff;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: stretch;
-	}
-
-	.nav-links {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-	}
-
-	.page-links {
-		order: 1;
-		gap: 30px;
-		margin: 30px 0;
-	}
-
-	.social_links {
-		order: 2;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		padding-left: 20px;
-		border-right: 0;
-		color: grey;
-	}
-	.page-links {
-		border-right: none;
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		padding-left: 20px;
 	}
 }

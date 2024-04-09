@@ -4,6 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Yohanan Cinnamon | About</title>
+		<link rel="stylesheet" href="nav.css" />
 		<link rel="stylesheet" href="about_style.css" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -31,7 +32,12 @@
 				<h1><a href="/index.html">Yohanan Cinnamon</a></h1>
 			</div>
 			<div class="nav-links">
-				<ul class="social_links">
+				<ul class="page-links">
+					<li><a href="/music_7.html">Music</a></li>
+					<li><a href="/about.html">About</a></li>
+					<li><a href="/contact.html">Contact</a></li>
+				</ul>
+				<ul class="social-links">
 					<li>
 						<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 					</li>
@@ -42,18 +48,21 @@
 						<a href="#"><i class="fa-regular fa-envelope"></i></a>
 					</li>
 				</ul>
-				<ul class="page-links">
-					<li><a href="/music_7.html">Music</a></li>
-					<li><a href="/about.html">About</a></li>
-					<li><a href="/contact.html">Contact</a></li>
-				</ul>
 			</div>
 		</div>
 		<nav>
-			<h3><a href="/index.html">yohanan Cinnamon</a></h3>
+			<div class="logo">
+				<h3><a href="/index.html">yohanan Cinnamon</a></h3>
+			</div>
 			<div class="menu-wrapper">
 				<div class="menu">
-					<i class="fa-solid fa-bars" onclick="toggleNavigation()"></i>
+					<div class="burger-menu" onclick="toggleNavigation()">
+						<div class="lines"></div>
+						<div class="lines"></div>
+						<div class="lines"></div>
+						<div class="lines"></div>
+						<div class="lines"></div>
+					</div>
 					<p onclick="toggleNavigation()">Menu</p>
 				</div>
 			</div>
