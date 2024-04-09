@@ -114,17 +114,17 @@ a:active {
 
 /* Pictures inside the four box1 divs */
 .pic1 {
-  background-image: url("./images/home-music.webp");
+  background-image: url("../images/home-music.webp");
   width: 100%;
 }
 .pic2 {
-  background-image: url("./images/home-inspiration.webp");
+  background-image: url("../images/home-inspiration.webp");
 }
 .pic3 {
-  background-image: url("./images/home-about-yohanan.webp");
+  background-image: url("../images/home-about-yohanan.webp");
 }
 .pic4 {
-  background-image: url("./images/home-contact-yohanan-cinnamon.webp");
+  background-image: url("../images/home-contact-yohanan-cinnamon.webp");
 }
 
 /* hyperlink arrows */
@@ -154,7 +154,7 @@ a:active {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-image: url("./images/home-yohanan-cinnamon-composer.webp");
+  background-image: url("../images/home-yohanan-cinnamon-composer.webp");
   background-position: center;
   background-size: cover;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
