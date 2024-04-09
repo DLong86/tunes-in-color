@@ -59,6 +59,12 @@ a:active {
 .navigation.show {
 	top: 0;
 }
+
+.nav-title h1 {
+	font-size: 20px;
+	padding-left: 20px;
+	text-transform: uppercase;
+}
 .nav-links {
 	display: flex;
 	gap: 20px;

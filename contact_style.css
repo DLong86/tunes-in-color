@@ -1,311 +1,180 @@
 /* Global */
 body {
-  box-sizing: border-box;
-  margin: 0;
-  background-image: url("./images/photo-1555181937-efe4e074a301.avif");
-  background-size: cover;
-  background-position: center;
-  font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
+	background-size: cover;
+	background-position: center;
+	font-family: "Montserrat", sans-serif;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
-/* dropdown nav ??????? */
-.navigation {
-  position: fixed;
-  top: -100%;
-  left: 0;
-  width: 100vw;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: inherit;
-  transition: top 0.3s ease;
-  z-index: 999;
-  backdrop-filter: blur(5px);
-}
+
 /* Styles for when navigation is open */
 .nav-open .container,
 .nav-open nav {
-  backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
 }
 .nav-open nav {
-  display: none;
+	display: none;
 }
 .nav-open .main {
-  transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
-  opacity: 0.4;
-  backdrop-filter: blur(5px);
-  z-index: 0;
-  background-color: rgba(255, 255, 255, 0.072);
-}
-.navigation.show {
-  top: 0;
-}
-.nav-links {
-  display: flex;
-  gap: 20px;
-  padding-right: 20px;
-}
-.social_links,
-.page-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  font-weight: 600;
-  font-size: 14px;
-}
-.social_links {
-  border-right: #000 solid 1px;
-  padding-right: 20px;
-}
-
-.nav-title h1 {
-  font-size: 20px;
-  padding-left: 20px;
-}
-
-.social_links li:hover,
-.page-links li:hover,
-.nav-title h1:hover {
-  transition: 0.3s ease-in-out;
-  color: rgba(0, 0, 0, 0.507);
+	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
+	opacity: 0.4;
+	backdrop-filter: blur(5px);
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0.072);
 }
 
 /* complete nav bar styling */
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #000;
-  z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 999;
 }
 
-nav h3 {
-  padding-left: 20px;
-  text-transform: uppercase;
+nav a {
+	margin-top: 12px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	z-index: 999;
 }
 nav h3:hover {
-  color: rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
+	opacity: 50%;
+	transition: 0.3s;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 0 20px;
-  color: #000;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.menu p {
-  margin-left: 10px;
-}
-
-.menu p,
-.menu i {
-  cursor: pointer;
+.nav-open nav .menu {
+	color: transparent;
+	transition: 0.3s ease-in-out;
 }
 
 /* Page container */
 .container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease;
-  background-color: #f2f2f280;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s ease;
+	background-color: #f2f2f280;
 }
 
 /* card div */
 .main {
-  width: 660px;
-  height: 646px;
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+	width: 660px;
+	height: 646px;
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .portrait_image,
 .contact_details {
-  /* width: 100%;
+	/* width: 100%;
 	height: 50%; */
-  margin: 0;
+	margin: 0;
 }
 /* top div with image */
 .portrait_image {
-  height: 338px;
-  width: 100%;
-  background-color: rgb(230, 230, 230);
-  border-radius: 10px 10px 0 0;
-  background-image: url("./images/contact-yohanan-cinnamon.webp");
-  background-position: center;
-  background-size: cover;
+	height: 338px;
+	width: 100%;
+	background-color: rgb(230, 230, 230);
+	border-radius: 10px 10px 0 0;
+	background-image: url("./images/contact-yohanan-cinnamon.webp");
+	background-position: center;
+	background-size: cover;
 }
 /* bottom div with social etc */
 .contact_details {
-  height: 308px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0 0 15px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	height: 308px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0 0 15px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .contact_details ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-  font-family: "EB Garamond", serif;
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+	font-family: "EB Garamond", serif;
 }
 
 .contact_details li {
-  margin-top: 20px;
-  font-size: 24px;
+	margin-top: 20px;
+	font-size: 24px;
 }
 
 .contact_details li:hover {
-  color: rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
+	color: rgba(0, 0, 0, 0.7);
+	transition: 0.2s;
 }
 
 .contact_details li:first-child {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .contact_details li i {
-  margin-right: 15px;
-  color: #028dac;
-  font-size: 16px;
+	margin-right: 15px;
+	color: #028dac;
+	font-size: 16px;
 }
 
 /* Mobile */
 @media screen and (max-width: 700px) {
-  .main {
-    width: 90%;
-  }
-  .contact_details {
-    background-color: #fff;
-    border-radius: 0 0 15px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* justify-content: space-around; */
-  }
-  .contact_details ul {
-    margin: 0;
-  }
-  .contact_details li {
-    margin-top: 15px;
-    font-size: 22px;
-  }
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease; /* Adjust the transition timing here */
-    width: calc(490px * 3); /* Total width of all images */
-    width: 490px;
-    height: 490px;
-  }
-
-  .slider img {
-    width: 400px; /* Set image width to 100% to maintain aspect ratio */
-    height: 400px; /* Allow height to adjust based on aspect ratio */
-    transition: transform 0.5s ease;
-    border-radius: 8px;
-  }
+	.main {
+		width: 90%;
+	}
+	.contact_details {
+		background-color: #fff;
+		border-radius: 0 0 15px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		/* justify-content: space-around; */
+	}
+	.contact_details ul {
+		margin: 0;
+	}
+	.contact_details li {
+		margin-top: 15px;
+		font-size: 22px;
+	}
 }
 
 /* responsive styling - for height to prevent contact links overflowing outside ".contact_details" div */
 @media screen and (max-height: 450px) {
-  .container {
-    height: 100%;
-    padding: 100px 0;
-  }
-  li {
-    font-size: 16px;
-    margin-top: 6px;
-  }
+	.container {
+		height: 100%;
+		padding: 100px 0;
+	}
+	li {
+		font-size: 16px;
+		margin-top: 6px;
+	}
 
-  .contact_details li {
-    margin: 10px 0;
-    font-size: 20px;
-  }
-}
-
-/* nav resposive */
-@media screen and (max-width: 1000px) {
-  .navigation {
-    height: 270px;
-    background-color: #fff;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: stretch;
-  }
-
-  .nav-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .page-links {
-    order: 1;
-    gap: 30px;
-    margin: 30px 0;
-  }
-
-  .social_links {
-    order: 2;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-left: 20px;
-    border-right: 0;
-    color: grey;
-  }
-  .page-links {
-    border-right: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 20px;
-  }
-  .menu {
-    padding: 20px;
-  }
-
-  .menu p {
-    display: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav i {
-    margin: 0;
-    padding: 0;
-  }
+	.contact_details li {
+		margin: 10px 0;
+		font-size: 20px;
+	}
 }
