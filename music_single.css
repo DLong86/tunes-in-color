@@ -485,6 +485,16 @@ iframe {
 		margin-top: 5px;
 	}
 
+	.lists {
+		gap: 20px;
+	}
+
+	.release,
+	.code,
+	.label {
+		gap: 35px;
+	}
+
 	.social {
 		position: absolute;
 		left: -75%;
