@@ -72,13 +72,9 @@ a:active {
   z-index: -1;
 }
 
-/* nav .logo {
-  z-index: 999;
-} */
-
 nav h3 {
   color: #fff;
-  margin-top: 12px;
+  margin-top: 10px;
   padding-left: 20px;
   text-transform: uppercase;
   z-index: 999;
@@ -102,21 +98,9 @@ nav h3:hover {
   z-index: 999;
 }
 
-/* .menu {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  padding: 0 20px;
-  color: #000;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 18px;
-} */
-
 .main-box {
   height: 100%;
   width: 100%;
-  /* background-color: grey; */
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -176,7 +160,6 @@ nav h3:hover {
   font-size: 39px;
   font-weight: 400;
   margin: 0;
-  /* margin-top: 8px; */
   padding-bottom: 0;
 }
 
@@ -270,7 +253,6 @@ nav h3:hover {
 }
 
 /* Bottom section with youtube video */
-
 .youtube-container {
   position: relative;
   z-index: 2;
@@ -399,7 +381,7 @@ iframe {
     box-shadow: none;
   }
   .small-box::before {
-    content: ""; /* Create pseudo-element for shadow */
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
@@ -407,7 +389,7 @@ iframe {
     bottom: 0;
     border-radius: 8px;
     box-shadow: rgba(110, 100, 111, 0.2) 0px 7px 29px 0px;
-    z-index: -1; /* Set z-index to appear behind .big-box */
+    z-index: -1;
   }
 
   .info-container {
@@ -473,7 +455,6 @@ iframe {
   }
 
   .play-list {
-    /* background-color: #028dac; */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -538,14 +519,13 @@ iframe {
     width: 95%;
     margin-bottom: 0;
     padding-bottom: 35px;
-    /* background-color: #fff; */
     border-radius: 8px 8px 0 0;
   }
 
   iframe {
-    width: 100%; /* Or adjust the width as needed */
+    width: 100%;
     margin: 0 auto;
-    height: 400px; /* Or adjust the height as needed */
+    height: 400px;
     padding-bottom: 0;
     margin-bottom: 0;
   }
@@ -554,7 +534,5 @@ iframe {
     width: 95%;
     height: 400px;
     background-color: pink;
-    /* margin-top: 20px; */
-    /* margin-bottom: 20px; */
   }
 }

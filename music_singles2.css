@@ -37,7 +37,6 @@
   margin: 0 auto;
   margin-bottom: 10px;
   border-radius: 8px;
-  /* background-color: rgb(158, 105, 105); */
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
@@ -69,7 +68,6 @@
   list-style-type: none;
   padding-left: 0;
   width: 100%;
-  /* margin-right: 15px; */
 }
 .play-list p {
   padding: 0;
@@ -136,13 +134,11 @@
   }
 
   .play-list {
-    /* background-color: #028dac; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
     width: 830px;
-    /* margin: 0 auto; */
   }
 
   .play-list ul {
