@@ -1,278 +1,280 @@
 body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Styles for when navigation is open */
 .nav-open .container,
 .nav-open nav {
-  backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
 }
 .nav-open nav {
-  color: transparent;
-  transition: 0.3s ease-in-out;
+	color: transparent;
+	transition: 0.3s ease-in-out;
 }
 
 .nav-open .container {
-  transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
-  opacity: 0.4;
-  backdrop-filter: blur(5px);
-  z-index: 0;
-  background-color: rgba(255, 255, 255, 0.072);
+	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
+	opacity: 0.4;
+	backdrop-filter: blur(5px);
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0.072);
 }
 
 .nav-title h1 {
-  font-size: 20px;
-  padding-left: 20px;
-  text-transform: uppercase;
+	font-size: 20px;
+	text-transform: uppercase;
 }
 
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: transparent;
-  width: 100%;
-  color: #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: transparent;
+	width: 100%;
+	color: #fff;
 }
 
 nav h3 {
-  color: #fff;
-  margin-top: 10px;
-  padding-left: 20px;
-  text-transform: uppercase;
-  z-index: 999;
+	color: #fff;
+	margin-top: 10px;
+	padding: 24px;
+	padding-left: 30px;
+	text-transform: uppercase;
+	z-index: 999;
 }
 
 nav h3:hover {
-  color: rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
+	opacity: 50%;
+	transition: 0.3s ease-in-out;
 }
 
 .menu-wrapper .menu {
-  color: #fff;
+	color: #fff;
 }
 
 .burger-menu .lines {
-  background-color: #fff;
+	background-color: #fff;
 }
 
 .container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background-image: url("./images/about-yohanan-cinnamon.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transition: 0.5s ease;
-  z-index: -1;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	background-image: url("./images/about-yohanan-cinnamon.webp");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	transition: 0.5s ease;
+	z-index: -1;
 }
 
 /* Fade bottom of main image */
 .container::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100px;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0),
-    rgba(255, 255, 255, 1)
-  );
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: linear-gradient(
+		to bottom,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 1)
+	);
 }
 
 .main {
-  position: relative;
-  top: 60%;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  margin: 0 auto;
+	position: relative;
+	top: 60%;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .about-container {
-  width: 1000px;
-  background-color: #fff;
-  border-radius: 10px 10px 0 0;
-  margin: 0 auto;
-  padding: 60px 0;
+	width: 1000px;
+	background-color: #fff;
+	border-radius: 10px 10px 0 0;
+	margin: 0 auto;
+	padding: 60px 0;
 }
 
 .about_section {
-  position: relative;
-  width: 830px;
-  background-color: #fff;
-  margin: 0 auto;
-  line-height: 40px;
-  font-size: 20px;
+	position: relative;
+	width: 830px;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 40px;
+	font-size: 20px;
 }
 
 .about_section p {
-  font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
 .header {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
+	line-height: 36px;
 }
 
 .header h3 {
-  text-transform: uppercase;
-  font-size: 32px;
-  margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 32px;
+	margin-bottom: 0;
+	padding-bottom: 0;
 }
 
 .header p {
-  font-family: "EB Garamond", serif;
-  font-style: italic;
-  font-size: 28px;
-  margin-top: 0;
-  padding-top: 0;
-  color: #00000050;
+	font-family: "EB Garamond", serif;
+	font-style: italic;
+	font-size: 28px;
+	margin-top: 0;
+	padding-top: 0;
+	color: #00000050;
 }
 
 .images {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0 auto;
-  gap: 16px;
-  margin: 40px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin: 0 auto;
+	gap: 16px;
+	margin: 40px 0;
 }
 
 .images img {
-  width: 405px;
-  height: 275px;
-  border-radius: 8px;
+	width: 405px;
+	height: 275px;
+	border-radius: 8px;
 }
 
 .quote {
-  border-left: #b68c5e solid 3px;
-  padding: 0 30px;
-  margin: 35px 0;
-  font-family: "EB Garamond", serif;
-  font-size: 29px;
+	border-left: #b68c5e solid 3px;
+	padding: 0 30px;
+	margin: 35px 0;
+	font-family: "EB Garamond", serif;
+	font-size: 29px;
 }
 .quote p {
-  font-family: "EB Garamond", serif;
-  font-weight: 400;
-  margin: 0;
+	font-family: "EB Garamond", serif;
+	font-weight: 400;
+	margin: 0;
 }
 
 .quote_cite {
-  color: #b68c5e;
-  font-style: italic;
-  font-size: 19px;
-  margin: 0;
+	color: #b68c5e;
+	font-style: italic;
+	font-size: 19px;
+	margin: 0;
 }
 
 .music_link {
-  position: absolute;
-  left: 0;
+	position: absolute;
+	left: 0;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  padding-bottom: 100px;
-  width: 100vw;
-  background-image: url("./images/musical-wave.png");
-  background-position: center;
-  background-size: cover;
-  z-index: 999;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	padding-bottom: 100px;
+	width: 100vw;
+	background-image: url("./images/musical-wave.png");
+	background-position: center;
+	background-size: cover;
+	z-index: 999;
 }
 
 .music_link p {
-  font-family: "EB Garamond", serif;
-  text-transform: uppercase;
-  font-size: 18px;
-  margin-bottom: 0;
+	font-family: "EB Garamond", serif;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 0;
 
-  padding-bottom: 0;
-  font-weight: 200;
+	padding-bottom: 0;
+	font-weight: 200;
 }
 .music_link h1 {
-  font-size: 54px;
-  font-weight: 600;
-  margin-top: 0;
-  margin-bottom: 20px;
-  padding-top: 0;
+	font-size: 54px;
+	font-weight: 600;
+	margin-top: 0;
+	margin-bottom: 12px;
+	padding-top: 0;
 }
 
 .music_link i {
-  font-size: 27px;
+	font-size: 27px;
 }
-.music_link i:hover {
-  color: #00000050;
-  transition: 0.3s ease;
+.music_link i:hover,
+.music_link p:hover,
+.music_link h1:hover {
+	opacity: 50%;
+	transition: 0.3s ease;
 }
 
 @media screen and (max-width: 1000px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
 
-  .about-container {
-    display: block;
-    width: 100%;
-    padding: 10px 0;
-    border-radius: 0;
-  }
+	.about-container {
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		border-radius: 0;
+	}
 
-  .about_section {
-    width: 90%;
-  }
+	.about_section {
+		width: 90%;
+	}
 
-  .header h3 {
-    font-size: 24px;
-  }
+	.header h3 {
+		font-size: 24px;
+	}
 
-  .header p {
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
+	.header p {
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
 
-  .images img {
-    width: 50%;
-  }
+	.images {
+		flex-direction: column;
+		margin: 0 auto;
+	}
 }
 @media screen and (max-width: 600px) {
-  .header {
-    margin-bottom: 25px;
-  }
-  .header h3 {
-    font-size: 20px;
-  }
-  .main {
-    top: 70%;
-  }
+	.header {
+		margin-bottom: 25px;
+	}
+	.header h3 {
+		font-size: 20px;
+	}
+	.main {
+		top: 70%;
+	}
 
-  .images {
-    flex-direction: column;
-  }
-  .images img {
-    width: 100%;
-  }
+	.about_section {
+		width: 80%;
+	}
 
-  .about_section {
-    width: 80%;
-  }
+	.images {
+		width: 70%;
+	}
 }

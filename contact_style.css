@@ -1,177 +1,187 @@
 /* Global */
 body {
-  box-sizing: border-box;
-  margin: 0;
-  background-image: url("./images/photo-1555181937-efe4e074a301.avif");
-  background-size: cover;
-  background-position: center;
-  font-family: "Montserrat", sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	background-color: #f2f2f2;
+}
+
+/* background to get transparancy on image */
+.background {
+	position: fixed;
+	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
+	background-size: cover;
+	background-position: center;
+	opacity: 20%;
+	height: 100%;
+	width: 100%;
+	z-index: 0;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 /* Styles for when navigation is open */
 .nav-open .container,
 .nav-open nav {
-  backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);
 }
 .nav-open nav {
-  display: none;
+	display: none;
 }
 .nav-open .main {
-  transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
-  opacity: 0.4;
-  backdrop-filter: blur(5px);
-  z-index: 0;
-  background-color: rgba(255, 255, 255, 0.072);
+	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
+	opacity: 0.4;
+	backdrop-filter: blur(5px);
+	z-index: 0;
+	background-color: rgba(255, 255, 255, 0.072);
 }
 
 /* complete nav bar styling */
 nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  z-index: 999;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 999;
 }
 
 nav h3 {
-  margin-top: 10px;
-  padding-left: 20px;
-  text-transform: uppercase;
-  z-index: 999;
+	margin-top: 10px;
+	padding-left: 20px;
+	text-transform: uppercase;
+	z-index: 999;
 }
 nav h3:hover {
-  opacity: 50%;
-  transition: 0.3s;
+	opacity: 50%;
+	transition: 0.3s;
 }
 
 .nav-open nav .menu {
-  color: transparent;
-  transition: 0.3s ease-in-out;
+	color: transparent;
+	transition: 0.3s ease-in-out;
 }
 
 /* Page container */
 .container {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s ease;
-  background-color: #f2f2f280;
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s ease;
+	/* background-color: #f2f2f280; */
 }
 
 /* card div */
 .main {
-  width: 660px;
-  height: 646px;
-  background-color: #fff;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+	width: 660px;
+	height: 646px;
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
 }
 
 .portrait_image,
 .contact_details {
-  margin: 0;
+	margin: 0;
 }
 /* top div with image */
 .portrait_image {
-  height: 338px;
-  width: 100%;
-  background-color: rgb(230, 230, 230);
-  border-radius: 10px 10px 0 0;
-  background-image: url("./images/contact-yohanan-cinnamon.webp");
-  background-position: center;
-  background-size: cover;
+	height: 338px;
+	width: 100%;
+	background-color: rgb(230, 230, 230);
+	border-radius: 10px 10px 0 0;
+	background-image: url("./images/contact-yohanan-cinnamon.webp");
+	background-position: center;
+	background-size: cover;
 }
 /* bottom div with social etc */
 .contact_details {
-  height: 308px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0 0 15px 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	height: 308px;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0 0 15px 15px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .contact_details ul {
-  list-style-type: none;
-  padding-left: 0;
-  margin-left: 0;
-  font-family: "EB Garamond", serif;
+	list-style-type: none;
+	padding-left: 0;
+	margin-left: 0;
+	font-family: "EB Garamond", serif;
 }
 
 .contact_details li {
-  margin-top: 20px;
-  font-size: 24px;
+	margin-top: 20px;
+	font-size: 24px;
 }
 
 .contact_details li:hover {
-  color: rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
+	color: rgba(0, 0, 0, 0.7);
+	transition: 0.2s;
 }
 
 .contact_details li:first-child {
-  margin-top: 0;
+	margin-top: 0;
 }
 
 .contact_details li i {
-  margin-right: 15px;
-  color: #028dac;
-  font-size: 16px;
+	margin-right: 15px;
+	color: #028dac;
+	font-size: 16px;
 }
 
 /* Mobile */
 @media screen and (max-width: 700px) {
-  .main {
-    width: 90%;
-  }
-  .contact_details {
-    background-color: #fff;
-    border-radius: 0 0 15px 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contact_details ul {
-    margin: 0;
-  }
-  .contact_details li {
-    margin-top: 15px;
-    font-size: 22px;
-  }
+	.main {
+		width: 90%;
+	}
+	.contact_details {
+		background-color: #fff;
+		border-radius: 0 0 15px 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.contact_details ul {
+		margin: 0;
+	}
+	.contact_details li {
+		margin-top: 15px;
+		font-size: 22px;
+	}
 }
 
 /* responsive styling - for height to prevent contact links overflowing outside ".contact_details" div */
 @media screen and (max-height: 450px) {
-  .container {
-    height: 100%;
-    padding: 100px 0;
-  }
-  li {
-    font-size: 16px;
-    margin-top: 6px;
-  }
+	.container {
+		height: 100%;
+		padding: 100px 0;
+	}
+	li {
+		font-size: 16px;
+		margin-top: 6px;
+	}
 
-  .contact_details li {
-    margin: 10px 0;
-    font-size: 20px;
-  }
+	.contact_details li {
+		margin: 10px 0;
+		font-size: 20px;
+	}
 }
