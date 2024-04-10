@@ -34,7 +34,8 @@ a:active {
   align-items: center;
   justify-content: center;
   gap: 40px;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   text-transform: uppercase;
   margin-top: 0;
   z-index: 1;
@@ -53,8 +54,14 @@ nav h3:hover {
   transition: 0.2s;
 }
 
+.menu .lines:hover,
+menu p:hover {
+  opacity: 50%;
+  transition: 0.3s ease;
+}
+
 .main {
-  height: 100vh;
+  height: 100%;
   width: 80%;
   margin: 0 auto;
   margin-top: 70px;
@@ -95,7 +102,7 @@ nav h3:hover {
 .slider-container {
   position: relative;
   width: 490px;
-  height: 490px;
+  height: 490px; /* Set the desired size */
   overflow: hidden;
   margin-bottom: 20px;
   box-shadow: rgba(100, 100, 111, 0.8) 0px 7px 29px 0px;
@@ -105,14 +112,12 @@ nav h3:hover {
 .slider {
   display: flex;
   transition: transform 0.5s ease;
-  width: calc(490px * 3);
-  width: 490px;
-  height: 490px;
+  width: 100%; /* Set the width to 100% */
 }
 
 .slider img {
-  width: 100%;
-  height: auto;
+  width: 490px; /* Set the desired size */
+  height: 490px; /* Set the desired size */
   transition: transform 0.5s ease;
   border-radius: 8px;
 }
