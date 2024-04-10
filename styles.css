@@ -1,294 +1,294 @@
 /* Global styles */
 body {
-	box-sizing: border-box;
-	margin: 0;
-	font-family: "Montserrat", sans-serif;
-	background-color: #f2f2f280;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f2f2f280;
 }
 
 a,
 a:hover,
 a:focus,
 a:active {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* background to get transparancy on image */
 .background {
-	position: fixed;
-	background-image: url("./images/photo-1555181937-efe4e074a301.avif");
-	background-size: cover;
-	background-position: center;
-	opacity: 20%;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
+  position: fixed;
+  background-image: url("images/photo-1555181937-efe4e074a301.avif");
+  background-size: cover;
+  background-position: center;
+  opacity: 20%;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
 /* container housing the five cards */
 .container {
-	position: relative;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 40px;
-	height: 100vh;
-	text-transform: uppercase;
-	color: #fff;
-	margin-top: 0;
-	z-index: 1;
-	transition: 0.5s ease;
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  height: 100vh;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 0;
+  z-index: 1;
+  transition: 0.5s ease;
 }
 
 /* Left and right containers, for the four small cards */
 .left,
 .right {
-	height: 577px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	font-weight: 400;
+  height: 577px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-weight: 400;
 }
 
 .left h5,
 .right h5 {
-	font-size: 14px;
-	margin-top: 10px;
-	padding-bottom: 0;
-	font-weight: 500;
+  font-size: 14px;
+  margin-top: 10px;
+  padding-bottom: 0;
+  font-weight: 500;
 }
 
 .left p,
 .right p {
-	font-family: "EB Garamond", serif;
-	margin-top: 0;
-	padding-top: 0;
+  font-family: "EB Garamond", serif;
+  margin-top: 0;
+  padding-top: 0;
 }
 
 /* Four small cards */
 .box1 {
-	position: relative;
-	height: 260px;
-	width: 260px;
-	border-radius: 7px;
-	background-position: center;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	font-size: 14px;
-	box-shadow: rgba(100, 100, 111, 0.397) 0px 7px 29px 0px;
-	overflow: hidden;
-	transition: background-color 0.3s ease;
+  position: relative;
+  height: 260px;
+  width: 260px;
+  border-radius: 7px;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: rgba(100, 100, 111, 0.397) 0px 7px 29px 0px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
 }
 
 /* Background blur on hover - styles */
 .box1::before {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #f2f2f230;
-	opacity: 0;
-	transition: opacity 0.3s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f230;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .box1:hover::before {
-	opacity: 1;
+  opacity: 1;
 }
 
 .box1 p,
 .box1 h5 {
-	position: relative;
-	z-index: 1;
-	transition: color 0.3s ease;
-	margin: 0;
-	padding: 0;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  margin: 0;
+  padding: 0;
 }
 
 .box1:hover p,
 .box1:hover h5 {
-	color: inherit;
+  color: inherit;
 }
 /* up - Background blur - up */
 
 .box1 h5 {
-	/* margin: 5px; */
-	font-size: 27px;
+  /* margin: 5px; */
+  font-size: 27px;
 }
 
 /* Pictures inside the four box1 divs */
 .pic1 {
-	background-image: url("../images/home-music.webp");
-	width: 100%;
+  background-image: url("images/home-music.webp");
+  width: 100%;
 }
 .pic2 {
-	background-image: url("../images/home-inspiration.webp");
+  background-image: url("images/home-inspiration.webp");
 }
 .pic3 {
-	background-image: url("../images/home-about-yohanan.webp");
+  background-image: url("images/home-about-yohanan.webp");
 }
 .pic4 {
-	background-image: url("../images/home-contact-yohanan-cinnamon.webp");
+  background-image: url("images/home-contact-yohanan-cinnamon.webp");
 }
 
 /* hyperlink arrows */
 .fa-arrow-right {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	padding: 12px;
-	font-size: 22px;
-	cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px;
+  font-size: 22px;
+  cursor: pointer;
 }
 .fa-arrow-right:hover {
-	color: rgba(255, 255, 255, 0.7);
-	transition: 0.3s;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.3s;
 }
 
 /* middle card container with main picture */
 .middle {
-	height: 577px;
-	width: 588px;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	border-radius: 10px;
+  height: 577px;
+  width: 588px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
 }
 
 /* center div with main picture */
 .box2 {
-	width: 100%;
-	height: 100%;
-	border-radius: 10px;
-	background-image: url("../images/home-yohanan-cinnamon-composer.webp");
-	background-position: center;
-	background-size: cover;
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-image: url("images/home-yohanan-cinnamon-composer.webp");
+  background-position: center;
+  background-size: cover;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
 }
 
 /* blue text area on middle div */
 .banner {
-	width: 100%;
-	background-color: #028dac;
-	position: absolute;
-	bottom: 0;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	padding: 20px 0px;
-	border-radius: 0 0 10px 10px;
+  width: 100%;
+  background-color: #028dac;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+  border-radius: 0 0 10px 10px;
 }
 
 .banner h2 {
-	font-size: 32px;
-	font-weight: bold;
-	font-family: "Montserrat", sans-serif;
-	margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
 }
 .banner h3 {
-	font-family: "EB Garamond", serif;
-	color: rgba(255, 255, 255, 0.7);
-	margin: 0;
-	font-size: 26px;
-	font-weight: 100;
-	font-weight: 400;
+  font-family: "EB Garamond", serif;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  font-size: 26px;
+  font-weight: 100;
+  font-weight: 400;
 }
 /* horizontal line seperating text on center card */
 .line {
-	width: 50px;
-	height: 1px;
-	background-color: #fff;
-	margin: 4px 0;
+  width: 50px;
+  height: 1px;
+  background-color: #fff;
+  margin: 4px 0;
 }
 
 /* Responsive */
 @media screen and (max-width: 1250px) {
-	.container {
-		padding-bottom: 40px;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.menu {
-		padding: 12px 20px 0 0;
-	}
+  .container {
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .menu {
+    padding: 12px 20px 0 0;
+  }
 
-	nav i {
-		margin: 0;
-		padding: 0;
-	}
+  nav i {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-	.main {
-		flex-direction: column;
-	}
+  .main {
+    flex-direction: column;
+  }
 
-	.container {
-		padding-top: 50px;
-		flex-direction: column;
-		height: 100%;
-	}
+  .container {
+    padding-top: 50px;
+    flex-direction: column;
+    height: 100%;
+  }
 
-	.middle {
-		order: -1;
-		width: 100%;
-		height: 500px;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		box-shadow: none;
-	}
-	.box1 {
-		width: 45%;
-	}
+  .middle {
+    order: -1;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: none;
+  }
+  .box1 {
+    width: 45%;
+  }
 
-	.box2 {
-		width: 80%;
-		font-size: 14px;
-	}
+  .box2 {
+    width: 80%;
+    font-size: 14px;
+  }
 
-	.box2 h2 {
-		font-size: 22px;
-	}
+  .box2 h2 {
+    font-size: 22px;
+  }
 
-	.pic1,
-	.pic2,
-	.pic3,
-	.pic4 {
-		width: 100%;
-	}
+  .pic1,
+  .pic2,
+  .pic3,
+  .pic4 {
+    width: 100%;
+  }
 
-	.left,
-	.right {
-		width: 80%;
-		height: 50%;
-		flex-direction: row;
-		gap: 2px;
-	}
+  .left,
+  .right {
+    width: 80%;
+    height: 50%;
+    flex-direction: row;
+    gap: 2px;
+  }
 
-	.box1 {
-		margin: 0 8px;
-	}
+  .box1 {
+    margin: 0 8px;
+  }
 }
 
 @media screen and (max-width: 600px) {
-	.box1 {
-		width: 100%;
-	}
-	.left,
-	.right {
-		width: 80%;
-		height: 50%;
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-between;
-		gap: 50px;
-	}
+  .box1 {
+    width: 100%;
+  }
+  .left,
+  .right {
+    width: 80%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+  }
 }

@@ -17,7 +17,7 @@ a:active {
 /* background to get transparancy on image */
 .background {
   position: fixed;
-  background-image: url("./images/photo-1555181937-efe4e074a301.avif");
+  background-image: url("images/photo-1555181937-efe4e074a301.avif");
   background-size: cover;
   background-position: center;
   opacity: 20%;
