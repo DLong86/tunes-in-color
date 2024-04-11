@@ -1,3 +1,4 @@
+// Function to add selectewd embed code for the youtube vids
 document.addEventListener("DOMContentLoaded", function () {
 	const playlistItems = document.querySelectorAll(".play-list li");
 
@@ -10,18 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
+// Function to add remove ".active" class and add/ remove the font awesome "play" / "Pause" icons
 document.addEventListener("DOMContentLoaded", function () {
 	const playlistItems = document.querySelectorAll(".play-list li");
 
 	playlistItems.forEach((item) => {
 		item.addEventListener("click", function () {
-			// Remove the 'active' class from all playlist items
+			// Removing the 'active' class from all playlists
 			playlistItems.forEach((item) => {
 				item.classList.remove("active");
 				item.querySelector("i").className = "fa-solid fa-play";
 			});
 
-			// Add the 'active' class to the clicked playlist item
+			// Adding 'active' class to the clicked playlit
 			this.classList.add("active");
 			this.querySelector("i").className = "fa-solid fa-pause";
 
