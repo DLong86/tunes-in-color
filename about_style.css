@@ -51,10 +51,13 @@ nav {
 nav h3 {
 	color: #fff;
 	margin-top: 10px;
-	padding: 24px;
+	padding: 25px;
 	padding-left: 30px;
 	text-transform: uppercase;
 	z-index: 999;
+}
+.menu p {
+	margin-top: 12px;
 }
 
 nav h3:hover {
@@ -187,7 +190,6 @@ nav h3:hover {
 .music_link {
 	position: absolute;
 	left: 0;
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -201,19 +203,24 @@ nav h3:hover {
 	z-index: 999;
 }
 
+.music_link a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
 .music_link p {
 	font-family: "EB Garamond", serif;
 	text-transform: uppercase;
 	font-size: 18px;
 	margin-bottom: 0;
-
 	padding-bottom: 0;
 	font-weight: 200;
 }
 .music_link h1 {
 	font-size: 54px;
 	font-weight: 600;
-	margin-top: 0;
+	margin-top: -2px;
 	margin-bottom: 12px;
 	padding-top: 0;
 }
@@ -221,9 +228,7 @@ nav h3:hover {
 .music_link i {
 	font-size: 27px;
 }
-.music_link i:hover,
-.music_link p:hover,
-.music_link h1:hover {
+.music_link a:hover {
 	opacity: 50%;
 	transition: 0.3s ease;
 }
