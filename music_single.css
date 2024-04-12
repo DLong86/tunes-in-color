@@ -47,7 +47,8 @@ a:active {
 	position: relative;
 	width: 100%;
 	height: 100%;
-/* 	background-image: url("images/music-no-text-album-alive-again.webp"); */
+	padding-top: 35px;
+	/* 	background-image: url("images/music-no-text-album-alive-again.webp"); */
 	background-position: top left;
 	background-size: cover;
 	display: flex;
@@ -112,8 +113,9 @@ nav h3:hover {
 .big-box {
 	position: relative;
 	background-color: #fff;
-	height: 550px;
-	width: 95%;
+	height: 640px;
+	width: calc(100% - 50px);
+	margin: 20px auto;
 	margin: 20px 0;
 	display: flex;
 	flex-direction: column;
@@ -123,10 +125,11 @@ nav h3:hover {
 }
 
 .small-box {
-	height: 300px;
-	width: 300px;
+	width: calc(100% - 50px);
+	height: calc(100vw - 50px);
+	aspect-ratio: 1 / 1;
 	border-radius: 8px;
-/* 	background-image: url("images/music-album-alive-again.webp"); */
+	/* 	background-image: url("images/music-album-alive-again.webp"); */
 	background-position: center;
 	background-size: cover;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -136,11 +139,13 @@ nav h3:hover {
 
 /* internal text */
 .social {
-	margin-top: 10px;
-	margin-bottom: 0;
-	padding-bottom: 0;
+	right: 0;
+	top: 0;
+	position: absolute;
+	padding-top: 25px;
+	padding-right: 25px;
 	display: flex;
-	gap: 20px;
+	gap: 10px;
 	font-size: 27px;
 	z-index: 999;
 }
@@ -166,7 +171,7 @@ nav h3:hover {
 }
 
 .titles h3 {
-	font-size: 39px;
+	font-size: 34px;
 	font-weight: 400;
 	margin: 0;
 	padding-bottom: 0;
@@ -179,7 +184,7 @@ nav h3:hover {
 }
 
 .titles {
-	padding-top: 40px;
+	padding-top: 15px;
 	margin-bottom: 46px;
 }
 
@@ -265,7 +270,7 @@ nav h3:hover {
 .youtube-container {
 	position: relative;
 	z-index: 2;
-/* 	height: 300px; ***** ALAN REMOVED ***** */
+	/* 	height: 300px; ***** ALAN REMOVED ***** */
 	width: 100%;
 	background-color: #fff;
 	display: flex;
@@ -296,8 +301,6 @@ iframe {
 .youtube-container .no-border {
 	border: 0;
 }
-
-
 
 @media screen and (min-width: 1000px) {
 	.nav-open .menu-wrapper {
@@ -334,17 +337,6 @@ iframe {
 		width: 362px;
 		z-index: 1;
 		box-shadow: none;
-	}
-	.small-box::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		border-radius: 8px;
-		box-shadow: rgba(110, 100, 111, 0.2) 0px 7px 29px 0px;
-		z-index: -1;
 	}
 
 	.info-container {
@@ -395,12 +387,12 @@ iframe {
 	}
 
 	.youtube-container {
-/* 		height: 1000px; ***** ALAN REMOVED ***** */
+		/* 		height: 1000px; ***** ALAN REMOVED ***** */
 		display: block;
 		width: 100%;
 		margin-top: 70px;
 		margin-bottom: 0;
-/* 		background-color: pink; */
+		/* 		background-color: pink; */
 	}
 
 	.youtube-box {
@@ -425,9 +417,8 @@ iframe {
 
 @media screen and (max-width: 500px) {
 	.big-box {
-		height: 100%;
+		height: 740px;
 	}
-
 	.lists {
 		flex-direction: column;
 		gap: 0;
@@ -438,7 +429,7 @@ iframe {
 	}
 
 	.youtube-container {
-/* 		height: 500px; ***** ALAN REMOVED ***** */
+		/* 		height: 500px; ***** ALAN REMOVED ***** */
 		width: 95%;
 		margin-bottom: 0;
 		padding-bottom: 35px;
@@ -456,59 +447,44 @@ iframe {
 	.youtube-box {
 		width: 95%;
 		height: 400px;
-/* 		background-color: pink; */
+		/* 		background-color: pink; */
 	}
 }
 
-
-
-
-
-
-
-
-
-
-
 /********** YOUTUBE CONTAINER IMPORTED FROM YOUTUBE2 **********/
-
-
-
-
-
 
 .play-list {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 95%;
-/* 	height: 100%; */
+	/* 	height: 100%; */
 	margin: 0 auto;
 }
 .play-list ul {
 	list-style-type: none;
 	padding-left: 0;
 	width: 100%;
-	}
-	.play-list ul li.active {
-		background-color: rgba(2, 141, 172, 0.1);
-		}
-	.play-list ul li {
-		border-bottom: 1px solid #00000010;
-		padding: 10px 0;
-		font-size: 12px;
-		font-weight: 300;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-		cursor: pointer;
-		}
-	
-	.play-list ul li:hover {
-		opacity: 50%;
-		transition: 0.3s;
-		}
+}
+.play-list ul li.active {
+	background-color: rgba(2, 141, 172, 0.1);
+}
+.play-list ul li {
+	border-bottom: 1px solid #00000010;
+	padding: 10px 0;
+	font-size: 12px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	cursor: pointer;
+}
+
+.play-list ul li:hover {
+	opacity: 50%;
+	transition: 0.3s;
+}
 
 .play-list p {
 	font-family: "Roboto", sans-serif;
@@ -543,7 +519,6 @@ iframe {
 }
 
 @media screen and (min-width: 1000px) {
-
 	.play-list {
 		display: flex;
 		align-items: center;
@@ -555,5 +530,4 @@ iframe {
 	.play-list ul {
 		margin-right: 0;
 	}
-
 }
