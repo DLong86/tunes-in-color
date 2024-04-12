@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	playlistItems.forEach((item) => {
 		item.addEventListener("click", function () {
 			const embedCode = item.getAttribute("data-embed-code");
-			const iframe = document.querySelector(".youtube-box2 iframe");
+			const iframe = document.querySelector(".youtube-box iframe");
 			iframe.src = embedCode;
 		});
 	});
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			const embedCode = decodeURIComponent(
 				this.getAttribute("data-embed-code")
 			);
-			const iframe = document.querySelector(".youtube-box2 iframe");
+			const iframe = document.querySelector(".youtube-box iframe");
 			iframe.src = embedCode;
 		});
 	});

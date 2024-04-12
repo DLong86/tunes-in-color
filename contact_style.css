@@ -134,9 +134,12 @@ nav h3:hover {
 	font-size: 24px;
 }
 
-.contact_details li:hover {
-	opacity: 50%;
-	transition: 0.2s;
+.contact_details a {
+	color: rgba(0,0,0,1);
+	transition: color ease 0.2s;
+}
+.contact_details a:hover {
+	color: rgba(0,0,0,0.4);
 }
 
 .contact_details li:first-child {

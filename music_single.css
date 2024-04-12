@@ -47,7 +47,7 @@ a:active {
 	position: relative;
 	width: 100%;
 	height: 100%;
-	background-image: url("images/music-album-alive-again.webp");
+/* 	background-image: url("images/music-no-text-album-alive-again.webp"); */
 	background-position: top left;
 	background-size: cover;
 	display: flex;
@@ -112,7 +112,7 @@ nav h3:hover {
 .big-box {
 	position: relative;
 	background-color: #fff;
-	height: 720px;
+	height: 550px;
 	width: 95%;
 	margin: 20px 0;
 	display: flex;
@@ -126,7 +126,7 @@ nav h3:hover {
 	height: 300px;
 	width: 300px;
 	border-radius: 8px;
-	background-image: url("images/music-album-alive-again.webp");
+/* 	background-image: url("images/music-album-alive-again.webp"); */
 	background-position: center;
 	background-size: cover;
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -265,7 +265,7 @@ nav h3:hover {
 .youtube-container {
 	position: relative;
 	z-index: 2;
-	height: 300px;
+/* 	height: 300px; ***** ALAN REMOVED ***** */
 	width: 100%;
 	background-color: #fff;
 	display: flex;
@@ -297,63 +297,7 @@ iframe {
 	border: 0;
 }
 
-.play-list {
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-	width: 95%;
-	margin: 0 auto;
-	font-family: "Roboto", sans-serif;
-}
-.play-list ul {
-	list-style-type: none;
-	padding-left: 0;
-	width: 405px;
-	margin-right: 15px;
-}
-.play-list p {
-	padding-left: 10px;
-	margin: 0;
-	font-weight: 400;
-}
 
-.play-list ul li.active {
-	background-color: rgba(2, 141, 172, 0.1);
-}
-
-.play-list .active i {
-	color: #000;
-}
-
-.play-list .active p {
-	color: #000;
-	font-weight: 400;
-}
-.play-list i:hover {
-	color: #000;
-	transition: 0.5s ease;
-}
-.play-list li {
-	border-bottom: 1px solid #00000090;
-	font-size: 12px;
-	font-weight: 300;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.play-list li p {
-	padding: 4px 0;
-	padding-left: 14px;
-}
-
-.play-list li i {
-	padding-right: 14px;
-	margin: 0;
-	color: #00000020;
-	font-size: 12px;
-	cursor: pointer;
-}
 
 @media screen and (min-width: 1000px) {
 	.nav-open .menu-wrapper {
@@ -451,10 +395,12 @@ iframe {
 	}
 
 	.youtube-container {
-		height: 1000px;
+/* 		height: 1000px; ***** ALAN REMOVED ***** */
+		display: block;
 		width: 100%;
 		margin-top: 70px;
 		margin-bottom: 0;
+/* 		background-color: pink; */
 	}
 
 	.youtube-box {
@@ -468,24 +414,6 @@ iframe {
 		font-size: 34px;
 		font-weight: 400;
 		margin-top: 0;
-	}
-
-	.play-list {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		gap: 40px;
-		width: 830px;
-	}
-
-	.play-list ul {
-		margin-right: 0;
-	}
-
-	.play-list li {
-		border-bottom: 1px solid #00000050;
-		padding: 6px 0;
-		font-size: 18px;
 	}
 
 	.youtube-container h1 {
@@ -508,29 +436,9 @@ iframe {
 	.info {
 		padding-bottom: 20px;
 	}
-	.play-list {
-		flex-direction: column;
-		margin-top: 0;
-		padding-top: 0;
-	}
-
-	.play-list ul {
-		margin-left: 40px;
-		margin-right: 40px;
-		width: 95%;
-		margin-bottom: 0;
-	}
-
-	.play-list ul:left,
-	.play-list ul:right {
-		margin-right: 0;
-		width: 50%;
-		gap: 0;
-		background-color: green;
-	}
 
 	.youtube-container {
-		height: 500px;
+/* 		height: 500px; ***** ALAN REMOVED ***** */
 		width: 95%;
 		margin-bottom: 0;
 		padding-bottom: 35px;
@@ -548,6 +456,104 @@ iframe {
 	.youtube-box {
 		width: 95%;
 		height: 400px;
-		background-color: pink;
+/* 		background-color: pink; */
 	}
+}
+
+
+
+
+
+
+
+
+
+
+
+/********** YOUTUBE CONTAINER IMPORTED FROM YOUTUBE2 **********/
+
+
+
+
+
+
+.play-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 95%;
+/* 	height: 100%; */
+	margin: 0 auto;
+}
+.play-list ul {
+	list-style-type: none;
+	padding-left: 0;
+	width: 100%;
+	}
+	.play-list ul li.active {
+		background-color: rgba(2, 141, 172, 0.1);
+		}
+	.play-list ul li {
+		border-bottom: 1px solid #00000010;
+		padding: 10px 0;
+		font-size: 12px;
+		font-weight: 300;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+		cursor: pointer;
+		}
+	
+	.play-list ul li:hover {
+		opacity: 50%;
+		transition: 0.3s;
+		}
+
+.play-list p {
+	font-family: "Roboto", sans-serif;
+	font-size: 18px;
+	padding: 0;
+	padding-left: 10px;
+	margin: 0;
+}
+
+.play-list .active i {
+	color: #000;
+}
+
+.play-list .active p {
+	color: #000;
+	font-weight: 400;
+}
+.play-list i {
+	padding: 0;
+	padding-right: 10px;
+	margin: 0;
+	color: #00000050;
+	font-size: 12px;
+}
+
+.menu {
+	padding: 27px;
+}
+
+.label {
+	border-bottom: 0;
+}
+
+@media screen and (min-width: 1000px) {
+
+	.play-list {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 40px;
+		width: 830px;
+	}
+
+	.play-list ul {
+		margin-right: 0;
+	}
+
 }
