@@ -90,7 +90,7 @@ a:active {
 
 .nav-title h1 {
 	font-size: 20px;
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 .social-links li:hover,
@@ -142,24 +142,24 @@ nav {
 
 @media screen and (max-width: 1000px) {
 	.navigation {
-		height: 270px;
+		height: 41%;
 		background-color: #fff;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: stretch;
 		text-transform: uppercase;
+		margin-bottom: 30px;
 	}
 
 	.nav-links {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding-bottom: 30px;
 	}
 
-	.page-links {
-		order: 1;
-		gap: 30px;
-		margin: 30px 0;
+	.nav-title h1 {
+		padding: 25px;
 	}
 
 	.social-links {
@@ -167,15 +167,20 @@ nav {
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		padding-left: 20px;
+		padding-left: 25px;
 		border-right: 0;
 		color: grey;
+		gap: 10px;
+		font-size: 16px;
 	}
 	.page-links {
 		border-right: none;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		padding-left: 20px;
+		gap: 10px;
+		padding-left: 25px;
+		margin-left: 0;
+		font-size: 16px;
 	}
 }
