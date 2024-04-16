@@ -386,7 +386,6 @@ iframe {
 	}
 	.big-box {
 		position: relative;
-		height: 100vh;
 		width: 830px;
 		margin-bottom: 0;
 	}
@@ -471,13 +470,9 @@ iframe {
 	.youtube-container h1 {
 		font-size: 34px;
 		font-weight: 400;
-		margin-top: 0;
-	}
-
-	.youtube-container h1 {
-		font-weight: normal;
 		width: 830px;
 		margin: 0 auto;
+		margin-top: 0;
 	}
 }
 
