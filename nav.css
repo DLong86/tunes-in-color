@@ -142,7 +142,7 @@ nav {
 
 @media screen and (max-width: 1000px) {
 	.navigation {
-		height: 41%;
+		height: 270px;
 		background-color: #fff;
 		flex-direction: column;
 		align-items: flex-start;
