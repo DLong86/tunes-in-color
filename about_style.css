@@ -13,58 +13,6 @@ a:active {
 	color: inherit;
 }
 
-/* Styles for when navigation is open */
-.nav-open .container,
-.nav-open nav {
-	backdrop-filter: blur(5px);
-}
-.nav-open nav {
-	color: transparent;
-	transition: 0.3s ease-in-out;
-}
-
-.nav-open .container {
-	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
-	opacity: 0.4;
-	backdrop-filter: blur(5px);
-	z-index: 0;
-	background-color: rgba(255, 255, 255, 0.072);
-}
-
-.nav-title h1 {
-	font-size: 20px;
-	text-transform: uppercase;
-}
-
-nav {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	background-color: transparent;
-	width: 100%;
-	color: #fff;
-}
-
-nav h3 {
-	color: #fff;
-	margin-top: 10px;
-	padding: 25px;
-	padding-left: 30px;
-	text-transform: uppercase;
-	z-index: 999;
-}
-.menu p {
-	margin-top: 12px;
-}
-
-nav h3:hover {
-	opacity: 50%;
-	transition: 0.3s ease-in-out;
-}
-
 .menu-wrapper .menu {
 	color: #fff;
 }
@@ -81,7 +29,6 @@ nav h3:hover {
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-	transition: 0.5s ease;
 	z-index: -1;
 }
 

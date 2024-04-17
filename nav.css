@@ -6,6 +6,38 @@ a:active {
 	color: inherit;
 }
 
+nav {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: transparent;
+	width: 100%;
+	color: #fff;
+}
+
+nav h3 {
+	margin-top: 10px;
+	padding: 25px;
+	padding-left: 30px;
+	text-transform: uppercase;
+}
+
+nav h3 a {
+	font-size: 20px;
+}
+
+nav h3:hover {
+	opacity: 50%;
+	transition: 0.3s;
+}
+
+.logo h3 {
+	z-index: 1000;
+}
+
 .burger-menu {
 	display: flex;
 	flex-direction: column;
@@ -26,34 +58,47 @@ a:active {
 .navigation {
 	position: fixed;
 	top: -100%;
-	left: 0;
-	width: 100vw;
-	height: 100px;
+	right: 0;
+	width: 70vw;
+	/* height: 100px; */
+	padding-top: 40px; /* set to this padding to align with the logo */
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	background-color: transparent;
-	transition: top 0.3s ease, opacity 0.5s ease;
-	z-index: 999;
+	transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
+	z-index: 1000;
 	backdrop-filter: blur(5px);
 }
 /* Styles for when navigation is open */
-.nav-open .container,
-.nav-open nav {
+.nav-open .container {
 	backdrop-filter: blur(5px);
+}
+
+/* added apr 17 */
+.nav-open nav {
+	display: block;
+	z-index: 999;
+	width: 50%;
 }
 .nav-open .menu {
 	display: none;
-	transition: 0.3s ease-in-out;
+	/* transition: 0.3s ease-in-out; */
 }
 .nav-open .left,
 .nav-open .right,
-.nav-open .middle {
+.nav-open .middle,
+.nav-open .container {
 	transition: opacity 0.5s ease, backdrop-filter 0.5s ease;
 	opacity: 0.4;
 	backdrop-filter: blur(5px);
 	z-index: 0;
 	background-color: rgba(255, 255, 255, 0.072);
+}
+
+.nav-title {
+	display: none;
+	transition: 0.5s ease;
 }
 .navigation.show {
 	top: 0;
@@ -99,13 +144,7 @@ a:active {
 	transition: 0.3s ease-in-out;
 	opacity: 50%;
 }
-nav {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	background-color: transparent;
-}
+
 /* Div containing burger menu plus "MENU" text */
 .menu {
 	display: flex;
@@ -142,6 +181,7 @@ nav {
 
 @media screen and (max-width: 1000px) {
 	.navigation {
+		width: 100vw;
 		height: 270px;
 		background-color: #fff;
 		flex-direction: column;
@@ -159,7 +199,17 @@ nav {
 	}
 
 	.nav-title h1 {
-		padding: 25px;
+		padding: 20px;
+		font-size: 20px;
+	}
+
+	.nav-open nav {
+		display: none;
+	}
+
+	.nav-open .nav-title {
+		display: block;
+		transition: 0.5s ease;
 	}
 
 	.social-links {

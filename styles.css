@@ -14,6 +14,17 @@ a:active {
 	color: inherit;
 }
 
+.navigation {
+	width: 100vw;
+	justify-content: space-between;
+	padding-top: 25px;
+}
+
+.nav-open .nav-title {
+	display: block;
+	transition: 0.5s ease;
+}
+
 /* background to get transparancy on image */
 .background {
 	position: fixed;
@@ -294,10 +305,10 @@ a:active {
 	.container {
 		padding-top: 75px;
 		gap: 30px;
-		}
-		
+	}
+
 	.box1 {
-    	width: 100%;
+		width: 100%;
 	}
 	.left,
 	.right {
@@ -311,20 +322,20 @@ a:active {
 	.middle {
 		height: 70vh;
 		text-align: center;
-		}
-		.middle .box2 {
-			width: 90%;
-/*
+	}
+	.middle .box2 {
+		width: 90%;
+		/*
 			width: 100%;
 			margin-right: 15px;
 			margin-left: 15px;
 */
-			}
-			.middle .box2 .banner h2 {
-				padding-bottom: 5px;
-				}
-			.middle .box2 .banner h3 {
-				padding-top: 5px;
-				font-size: 20px;
-				}
+	}
+	.middle .box2 .banner h2 {
+		padding-bottom: 5px;
+	}
+	.middle .box2 .banner h3 {
+		padding-top: 5px;
+		font-size: 20px;
+	}
 }

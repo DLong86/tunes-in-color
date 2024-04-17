@@ -43,15 +43,7 @@ a:active {
 }
 
 nav h3 {
-	padding: 24px;
-	padding-left: 30px;
-	text-transform: uppercase;
-	cursor: pointer;
-	z-index: 999;
-}
-nav h3:hover {
-	opacity: 50%;
-	transition: 0.2s;
+	color: #000;
 }
 
 .menu {
