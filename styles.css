@@ -20,9 +20,9 @@ a:active {
 	padding-top: 25px;
 }
 
-.nav-open .nav-title {
+.nav-title {
 	display: block;
-	transition: 0.5s ease;
+	/* transition: 0.5s ease; */
 }
 
 /* background to get transparancy on image */
@@ -237,14 +237,14 @@ a:active {
 		padding-left: 10px;
 		padding-right: 10px;
 	}
-	.menu {
+	/* .menu {
 		padding: 12px 20px 0 0;
 	}
 
 	nav i {
 		margin: 0;
 		padding: 0;
-	}
+	} */
 }
 
 @media screen and (max-width: 1000px) {

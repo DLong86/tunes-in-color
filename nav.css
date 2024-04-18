@@ -59,12 +59,12 @@ nav h3:hover {
 	right: 0;
 	width: 70vw;
 	/* height: 100px; */
-	padding-top: 40px; /* set to this padding to align with the logo */
+	padding-top: 25px; /* set to this padding to align with the logo */
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	background-color: transparent;
-	transition: top 0.3s ease-in-out, opacity 0.5s ease-in-out;
+	transition: top 0.6s ease-in-out, opacity 0.5s ease-in-out;
 	z-index: 1000;
 	backdrop-filter: blur(5px);
 }
@@ -208,6 +208,7 @@ nav h3:hover {
 
 	.nav-open nav {
 		display: none;
+		transition: 0.3s;
 	}
 
 	.nav-open .nav-title {
