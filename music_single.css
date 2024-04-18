@@ -338,6 +338,37 @@ iframe {
 	border-bottom: 0;
 }
 
+@media screen and (max-width: 500px) {
+	.big-box {
+		margin: 15xp auto;
+	}
+	.repertoire {
+		margin-bottom: 15px;
+	}
+
+	.youtube-container {
+		/* 		height: 500px; ***** ALAN REMOVED ***** */
+
+		width: 90%;
+		margin-bottom: 0;
+		margin-top: 0;
+		/* padding-bottom: 35px; */
+		border-radius: 8px 8px 0 0;
+	}
+	.youtube-container h1 {
+		font-size: 16px;
+	}
+
+	.youtube-box,
+	.spotify-box {
+		height: 230px;
+	}
+
+	.spotify-box {
+		padding-bottom: 150px;
+	}
+}
+
 @media screen and (min-width: 1000px) {
 	.container {
 		height: 100vh;
@@ -441,40 +472,6 @@ iframe {
 		margin: 0 auto;
 		margin-top: 0;
 	}
-}
-
-@media screen and (max-width: 500px) {
-	.big-box {
-		margin: 15xp auto;
-	}
-	.repertoire {
-		margin-bottom: 15px;
-	}
-
-	.youtube-container {
-		/* 		height: 500px; ***** ALAN REMOVED ***** */
-		height: 100%;
-		width: 90%;
-		margin-bottom: 0;
-		margin-top: 0;
-		/* padding-bottom: 35px; */
-		border-radius: 8px 8px 0 0;
-	}
-	.youtube-container h1 {
-		font-size: 16px;
-	}
-
-	.youtube-box,
-	.spotify-box {
-		height: 230px;
-	}
-
-	.spotify-box {
-		padding-bottom: 150px;
-	}
-}
-
-@media screen and (min-width: 1000px) {
 	.play-list {
 		display: flex;
 		align-items: center;
