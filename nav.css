@@ -19,15 +19,15 @@ nav {
 }
 
 nav h3 {
-	margin-top: 10px;
+	margin: 0;
 	padding: 25px;
 	padding-left: 30px;
 	text-transform: uppercase;
 }
 
-nav h3 a {
+/* nav h3 a {
 	font-size: 20px;
-}
+} */
 
 nav h3:hover {
 	opacity: 50%;
@@ -43,14 +43,12 @@ nav h3:hover {
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	width: 14px;
-	height: 15px;
 	cursor: pointer;
 }
 
 .lines {
 	width: 13px;
-	height: 1px;
+	padding-top: 1px;
 	background-color: #000;
 	margin-bottom: 2px;
 }
@@ -150,8 +148,11 @@ nav h3:hover {
 	display: flex;
 	align-items: center;
 	justify-content: end;
-	/* padding: 0 20px; */
-	padding: 27px;
+	/* The burger menu sits in the middle of the box and so to get it to be in line with the logo I've had to reduce padding top  */
+	/* but now it sits directly in line with the logo which is 25px. I used .menu p to help calculate */
+	margin-top: 0;
+	padding: 13px;
+	padding-right: 25px;
 	padding-bottom: 0;
 	color: #000;
 	font-weight: 600;
@@ -160,7 +161,6 @@ nav h3:hover {
 	position: absolute;
 	top: 0;
 	right: 0;
-	/* z-index: 999; */
 	gap: 11px;
 }
 
@@ -189,6 +189,9 @@ nav h3:hover {
 		justify-content: stretch;
 		text-transform: uppercase;
 		margin-bottom: 30px;
+	}
+	.menu {
+		padding: 25px;
 	}
 
 	.nav-links {
@@ -219,7 +222,6 @@ nav h3:hover {
 		align-items: center;
 		padding-left: 25px;
 		border-right: 0;
-		color: grey;
 		gap: 10px;
 		font-size: 16px;
 	}
@@ -232,5 +234,15 @@ nav h3:hover {
 		padding-left: 25px;
 		margin-left: 0;
 		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	nav h3 {
+		padding-left: 25px;
+	}
+	/* Remove word - menu */
+	nav p {
+		display: none;
 	}
 }
