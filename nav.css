@@ -59,7 +59,8 @@ nav h3:hover {
 	right: 0;
 	width: 70vw;
 	/* height: 100px; */
-	padding-top: 25px; /* set to this padding to align with the logo */
+	padding-top: 25px;
+	margin: 0;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
@@ -105,6 +106,7 @@ nav h3:hover {
 .nav-title h1 {
 	font-size: 20px;
 	padding-left: 20px;
+	margin-top: 0;
 	text-transform: uppercase;
 }
 .nav-links {
@@ -180,15 +182,19 @@ nav h3:hover {
 }
 
 @media screen and (max-width: 1000px) {
+	.navigation.show {
+		padding-top: 25px;
+		padding-left: 25px;
+	}
 	.navigation {
 		width: 100vw;
-		height: 270px;
+		/* height: 270px; */
 		background-color: #fff;
 		flex-direction: column;
 		align-items: flex-start;
 		justify-content: stretch;
 		text-transform: uppercase;
-		margin-bottom: 30px;
+		/* margin-bottom: 30px; */
 	}
 	.menu {
 		padding: 25px;
@@ -202,7 +208,7 @@ nav h3:hover {
 	}
 
 	.nav-title h1 {
-		padding: 20px;
+		padding-left: 25px;
 		font-size: 20px;
 	}
 
